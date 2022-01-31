@@ -69,8 +69,27 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 1. Add a new file at `.github/workflows/publish.yml`.
 1. Add the following to the `publish.yml` file:
    ```yml
-   TBD
+   name: Publish to Docker
+   on:
+     push:
+       branches:
+         - main
+   jobs:
+     publish:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v2
+         # Add your test steps here if needed...
+         - name: Build container
+           uses: docker/build-push-action@v1
+           with:
+             username: YOURNAME
+             password: ${{ secrets.GITHUB_TOKEN }}
+             registry: docker.pkg.github.com
+             repository: YOURNAME/publish-packages/game
+             tag_with_sha: true
    ```
+1. Replace `YOURNAME` with your username.
 1. Commit your changes.
 1. Wait about 20 seconds then refresh this page for the next step.
 
@@ -131,16 +150,42 @@ You can now [merge](https://help.github.com/articles/github-glossary/#merge) you
 <details id=4>
 <summary><strong>:rowboat: Step 4: Pull your image</strong></summary>
 
-### Nice work TBD :sparkles:
+### Now things are running! :sparkles:
 
-TBD
+Whoa, now things are running! This may take a few minutes. This might take a tiny amount of time, so grab your popcorn :popcorn: and wait for the build to finish before moving on.
 
-**What is _TBD_**: TBD
+To pull the Docker image, we need to log into Docker first.
 
-### :keyboard: Activity: TBD
+Before we can use this Docker image, you will need to generate a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that contains the following permissions:
 
-1. TBD.
-1. Wait about 20 seconds then refresh this page for the next step.
+- repo (all)
+- write:packages
+- read:packages
+
+![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://i.imgur.com/Ue9BJoV.png)
+
+We will use this token to log in to Docker, and authenticate with the package.
+
+1. Open your terminal (Bash or Git Bash recommended)
+1. Use the following command to log in:
+    ```
+    docker login docker.pkg.github.com -u USERNAME -p TOKEN
+    ```
+1. Replace `USERNAME` with your GitHub username
+1. Replace `TOKEN` with the Personal Access Token you just created
+1. Press **Enter**
+
+If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
+
+### :keyboard: Activity: Pull your image
+
+1. Copy and paste the `pull` command from the package instructions into your terminal. It should look something like this:
+   - `docker pull docker.pkg.github.com/YOURNAME/js-build/tic-tac-toe:f29`
+   ![screenshot of the pull command on the GitHub package page](https://i.imgur.com/pFQgfSZ.png)
+1. Press **Enter**.
+1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for docker`.
+   ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)
+1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
 
@@ -153,16 +198,24 @@ TBD
 <details id=5>
 <summary><strong>:runner: Step 5: Run your image</strong></summary>
 
-### Nicely done friend! :sparkles:
+### Nicely done grabbing your Docker image! :sparkles:
 
-TBD
+Let's trying running it!
 
-**What is _TBD_**: TBD
+### :keyboard: Activity: Run your image
 
-### :keyboard: Activity: TBD
-
-1. TBD.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Find your image information by typing `Docker image ls`.
+   ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)
+1. Use the following command to run a container from your image:
+   ```
+   docker run -d -it --rm -p 8080:80 --name ttt <YOUR_IMAGE_NAME:TAG>
+   ```
+1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
+1. Replace `TAG` with the image tag under the `TAG` column
+   ![example of running the docker command listed above](https://i.imgur.com/hr6N9nk.png).
+1. Press **Enter**.
+1. If everything went well, you will see hash value as output on your screen.
+1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
 
