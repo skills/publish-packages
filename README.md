@@ -212,7 +212,7 @@ Let's trying running it!
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
 1. Replace `TAG` with the image tag under the `TAG` column
-   ![example of running the docker command listed above](https://i.imgur.com/hr6N9nk.png).
+   ![example of running the docker command listed above](https://i.imgur.com/hr6N9nk.png)
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
