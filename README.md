@@ -51,12 +51,27 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 
 ### :wave: Welcome to "Publish packages"!
 
-**What is _TBD_**: TBD
+First, take a moment to examine the image below. It shows the relationship between _continuous integration_, _continuous delivery_ and _continuous deployment_.
+
+![](https://i.imgur.com/xZCkjmU.png)
+
+**Continuous integration** (CI) is a practice where developers integrate tested code into a shared branch several times per day. **Continuous delivery** (CD) is the next phase of **continuous integration** (CI), where we deploy our changes to the world.
+
+[**Docker**](https://www.docker.com/why-docker) is an engine that allows you to run containers.
+Containers are packages of software that can run reliably in different environments. Containers include everything needed to run the application. Containers are lightweight in comparison to virtual machines. A **dockerfile** is a text document that contains all the commands and instructions necessary to build a Docker Image. A **Docker image** is an executable package comprised of code, dependancies, libraries, a runtime, environment variables, and configuration files. A **Docker container** is a runtime instance of a Docker Image.
+
+We'll start by creating the workflow file to publish a Docker image to GitHub Packages.
 
 ### :keyboard: Activity: Create the workflow file
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. TBD.
+1. Open the pull request I made for you from the `cd` branch.
+1. Add a new file at `.github/workflows/publish.yml`.
+1. Add the following to the `publish.yml` file:
+   ```yml
+   TBD
+   ```
+1. Commit your changes.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -70,15 +85,18 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 <details id=2>
 <summary><strong>:ship: Step 2: Add a Dockerfile</strong></summary>
 
-### :tada: You did TBD!
+### :tada: You created a publishing workflow!
 
-TBD
-
-**What is _TBD_**: TBD
+We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
 ### :keyboard: Activity: Add a Dockerfile
 
-1. TBD.
+1. In the `cd` branch, edit the `Dockerfile` to include:
+   ```dockerfile
+   FROM nginx:1.17
+   COPY . /usr/share/nginx/html
+   ```
+1. Commit your changes.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -92,14 +110,14 @@ TBD
 <details id=3>
 <summary><strong>:shipit: Step 3: Merge your pull request</strong></summary>
 
-### :heart: Almost there TBD!
+### :heart: Let's get publishing!
 
 You can now [merge](https://help.github.com/articles/github-glossary/#merge) your pull request!
 
 ### :keyboard: Activity: Merge your pull request
 
 1. Click **Merge pull request**.
-1. Delete the branch `TBD` (optional).
+1. Delete the branch `cd` (optional).
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -162,7 +180,7 @@ TBD
 
 Here's a recap of all the tasks you've accomplished in your repository:
 
-- You wrote a workflow that sends a code through a continuous deployment pipeline.
+- You wrote a workflow that sends a code through a continuous delivery pipeline.
 - You built a fully deployable artifact.
 - You did so using GitHub Actions and GitHub Packages!
 
