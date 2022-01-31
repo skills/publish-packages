@@ -1,60 +1,16 @@
-# GitHub Actions: Publish to GitHub Packages
 
-_This course will walk you through using GitHub Actions to get your code in a deployable state once your CI workflows have completed._
 
-![](https://repository-images.githubusercontent.com/216605017/627c7780-57db-11ea-990b-17c6ffdff523)
 
-**Tags**: GitHub Actions, GitHub Packages, Deployment, Workflows, Docker
 
----
 
-GitHub Actions makes it easier than ever to incorporate continuous delivery (CD) into your repositories. This course will teach you what is needed to test and deliver artifacts that are ready for deployment.
 
-## What you'll learn
 
-We'll answer common questions like:
 
-- What is GitHub Packages?
-- What role does package management play in the software development lifecycle?
-- What is a container, a virtual machine, and Docker?
 
-After taking this course, you'll be able to:
 
-- Describe CD and why it is necessary
-- Use and customize a repository workflow
-- Create CD workflows that matches the team's needs and behaviors
-- Use the repository's source code to build artifacts and store them in the GitHub Packages
-- Save repository build artifacts
-- Access saved build artifacts
 
-## What you'll build
 
-![GIF of a pull request, clicking on a commit status, shows logs of a package publishing, then shows package on the GitHub repository](https://user-images.githubusercontent.com/16547949/74983056-51122480-5403-11ea-8c86-29c42e69fb87.gif)
 
-- Completed [source repository](https://github.com/githubtraining/github-actions-for-packages-demo)
-- GitHub Actions [workflow](https://github.com/githubtraining/github-actions-for-packages-demo/runs/458940996?check_suite_focus=true) for creating the Docker image, tagging, and pushing to GitHub Packages
-- [Docker image](https://github.com/githubtraining/github-actions-for-packages-demo/packages/133342) pushed to GitHub Packages
-
-## Prerequisites
-
-We recommend you first complete the following courses:
-
-- [Hello, GitHub Actions!](https://lab.github.com/github/hello-github-actions!)
-- [GitHub Actions: Continuous Integration](https://lab.github.com/githubtraining/github-actions:-continuous-integration)
-
-## Projects used
-
-This makes use of the following open source projects. Consider exploring these repos and maybe even making contributions!
-
-- [actions/checkout](https://github.com/actions/checkout): Action for checking out a repo
-- [actions/upload-artifact](https://github.com/actions/upload-artifact): Upload artifacts from GitHub's built-in artifact storage.
-- [actions/download-artifact](https://github.com/actions/download-artifact): Download artifacts from GitHub's built-in artifact storage.
-- [actions/setup-node](https://github.com/actions/setup-node): Set up your GitHub Actions workflow with a specific version of node.js
-- [docker/build-and-push-docker-images](https://github.com/marketplace/actions/build-and-push-docker-images): A GitHub Action to upload Docker images.
-
-## Audience
-
-Developers, DevOps engineers, full stack developers, cloud engineers
 
 
 ---
@@ -529,24 +485,5 @@ You should see output indicating that the pull was successful, like `Status: Dow
 
 If everything went well, you will see hash value as output on your screen.
 
-# Congratulations! 🎉
 
-Congratulations @{{ user.username }}, you did it!  You wrote a workflow that sends a code through a CI/CD pipeline and leaves you will a fully tested, fully deployable artifact.
 
-You did so using GitHub Actions and GitHub Packages!
-
-This concludes our course.  Close this issue when you are done.  You are free to keep this repository for future reference as you go out and build cool things on the internet!
-
-![celebrate](https://octodex.github.com/images/collabocats.jpg)
-
-## What's next?
-
-We hope this course helped you feel more comfortable using GitHub. Remember: You’re always welcome to repeat course topics if you’d like additional practice. If you’re ready to build on your new skills, here are some ideas.
-
-### Contribute to a project
-
-To find projects to contribute to through trending topics and curated collections, check out [GitHub Explore](https://github.com/explore).
-
-### Keep learning
-
-[What will you learn next]({{ host }}/courses)?
