@@ -1,5 +1,152 @@
-TBD
+<title>Tic Tac Toe</title>
+<meta charset="UTF-8" />
+
+<style>
+  body,
+  td,
+  input {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+  }
+  td {
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+  }
+  table {
+    margin: 5rem auto;
+  }
+  @media (prefers-color-scheme: dark) {
+    body,
+    input {
+      background: #222;
+      color: #ccc;
+    }
+  }
+</style>
+
+<h1>Tic Tac Toe</h1>
+
+<table>
+  <tr>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+    <td><input type="checkbox" /></td>
+  </tr>
+</table>
+
+<h2 hidden>Game over</h2>
 
 <script>
-  // TBD tic tac toe game
+  // Initialization
+  const boxes = Array.from(document.querySelectorAll('td'))
+  const inputs = Array.from(document.querySelectorAll('[type=checkbox]'))
+  const rows = [1, 2, 3].map((n) =>
+    Array.from(document.querySelectorAll(`tr:nth-child(${n}) td`))
+  )
+  const columns = [1, 2, 3].map((n) =>
+    Array.from(document.querySelectorAll(`td:nth-child(${n})`))
+  )
+  const diagonals = [
+    [
+      document.querySelector('tr:nth-child(1) td:nth-child(1)'),
+      document.querySelector('tr:nth-child(2) td:nth-child(2)'),
+      document.querySelector('tr:nth-child(3) td:nth-child(3)'),
+    ],
+    [
+      document.querySelector('tr:nth-child(3) td:nth-child(1)'),
+      document.querySelector('tr:nth-child(2) td:nth-child(2)'),
+      document.querySelector('tr:nth-child(1) td:nth-child(3)'),
+    ],
+  ]
+  const gameOver = document.querySelector('h2')
+
+  function choose(arr) {
+    return arr[Math.floor(Math.random() * arr.length)]
+  }
+
+  // Decide who goes first
+  if (Math.random() > 0.5) {
+    runRobotTurn()
+  }
+
+  // Handle when a user clicks an input
+  for (const input of inputs) {
+    input.addEventListener('click', handleClickInput)
+  }
+
+  function handleClickInput(evt) {
+    evt.target.closest('td').innerHTML = '🧑‍💻'
+    if (hasWin()) {
+      return endGame()
+    }
+    runRobotTurn()
+    if (hasWin()) {
+      return endGame()
+    }
+  }
+
+  // Choose a random available box
+  function runRobotTurn() {
+    let box = choose(boxes)
+    let count = 0
+    while (count <= boxes.length && !box.querySelector('input')) {
+      count++
+      box = choose(boxes)
+    }
+    box.innerHTML = '🤖'
+  }
+
+  // Determine win
+  function hasWin() {
+    // Check horizontal wins
+    for (let row of rows) {
+      if (hasAllSame(row)) {
+        return true
+      }
+    }
+
+    // Check vertical wins
+    for (let col of columns) {
+      if (hasAllSame(col)) {
+        return true
+      }
+    }
+
+    // Check diagonal wins
+    for (let diag of diagonals) {
+      if (hasAllSame(diag)) {
+        return true
+      }
+    }
+  }
+
+  // Determine if every cell matches
+  function hasAllSame(arr) {
+    return arr.every(
+      (td) => !td.querySelector('input') && td.innerHTML === arr[0].innerHTML
+    )
+  }
+
+  // Display game over, cancel events
+  function endGame() {
+    gameOver.hidden = false
+
+    for (const input of inputs) {
+      input.removeEventListener('click', handleClickInput)
+      input.remove()
+    }
+  }
 </script>
