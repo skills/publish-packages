@@ -12,10 +12,13 @@ on:
     branches:
       - main
 
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 permissions:
   # Need `contents: read` to checkout the repository
   # Need `contents: write` to update the step metadata
+  # Need `pull-requests: write` to create a pull request
   contents: write
+  pull-requests: write
 
 jobs:
   on_start:
@@ -49,7 +52,7 @@ jobs:
           fi
 
           echo "Make a branch"
-          $BRANCH=cd
+          BRANCH=cd
           git checkout -b $BRANCH
 
           echo "Make an empty commit"
@@ -78,4 +81,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FROM_STEP: 0
           TO_STEP: 1
-          BRANCH_NAME: TBD
+          BRANCH_NAME: cd
