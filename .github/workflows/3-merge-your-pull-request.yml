@@ -18,8 +18,8 @@ permissions:
   contents: write
 
 jobs:
-  on_TBD:
-    name: On TBD
+  on_push_main:
+    name: On push main
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -38,6 +38,38 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches
 
-      # TBD include any further steps here
+      # Custom step finish here: close 3; open 4, 5, and X; set STEP to X
+      - name: Update to open remaining steps
+        run: |
+          echo "Check that we are on FROM_STEP"
+          if [ "$(cat .github/script/STEP)" != $FROM_STEP ]
+          then
+            echo "Current step is not $FROM_STEP"
+            exit 0
+          fi
 
-      # TBD custom step finish here, close 3, open 4, 5, and X; set STEP to X
+          echo "Make sure we are on the main branch"
+          git checkout main
+
+          echo "Remove 'open' from any <details> tags"
+          sed -r 's/<details id=([0-9]+) open>/<details id=\1>/g' README.md > tmp
+          mv tmp README.md
+
+          echo "Add 'open' to step 3, 4, and X"
+          sed -r "s/<details id=([34X])>/<details id=\1 open>/g" README.md > tmp
+          mv tmp README.md
+
+          echo "Update the STEP file to TO_STEP"
+          echo "$TO_STEP" > .github/script/STEP
+
+          echo "Commit the files, and push to main"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git add .github/script/STEP
+          git commit --message="Update to $TO_STEP in STEP and README.md"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FROM_STEP: 3
+          TO_STEP: X

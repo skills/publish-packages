@@ -110,7 +110,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 
 ### :keyboard: Activity: Add a Dockerfile
 
-1. In the `cd` branch, edit the `Dockerfile` to include:
+1. In the `cd` branch, create `Dockerfile` at the project root and include:
    ```dockerfile
    FROM nginx:1.17
    COPY . /usr/share/nginx/html
