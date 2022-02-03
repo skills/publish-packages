@@ -56,7 +56,7 @@ jobs:
           mv tmp README.md
 
           echo "Add 'open' to step 3, 4, and X"
-          sed -r "s/<details id=([34X])>/<details id=\1 open>/g" README.md > tmp
+          sed -r "s/<details id=([45X])>/<details id=\1 open>/g" README.md > tmp
           mv tmp README.md
 
           echo "Update the STEP file to TO_STEP"
