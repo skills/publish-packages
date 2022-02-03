@@ -61,21 +61,23 @@
   )
   const diagonals = [
     [
-      document.querySelector('tr:nth-child(1) td:nth-child(1)'),
-      document.querySelector('tr:nth-child(2) td:nth-child(2)'),
-      document.querySelector('tr:nth-child(3) td:nth-child(3)'),
+      [1, 1],
+      [2, 2],
+      [3, 3],
     ],
     [
-      document.querySelector('tr:nth-child(3) td:nth-child(1)'),
-      document.querySelector('tr:nth-child(2) td:nth-child(2)'),
-      document.querySelector('tr:nth-child(1) td:nth-child(3)'),
+      [3, 1],
+      [2, 2],
+      [1, 3],
     ],
-  ]
+  ].map((set) =>
+    set.map(([x, y]) =>
+      document.querySelector(`tr:nth-child(${x}) td:nth-child(${y})`)
+    )
+  )
   const gameOver = document.querySelector('h2')
-
-  function choose(arr) {
-    return arr[Math.floor(Math.random() * arr.length)]
-  }
+  const HUMAN = '🧑‍💻'
+  const ROBOT = '🤖'
 
   // Decide who goes first
   if (Math.random() > 0.5) {
@@ -87,8 +89,9 @@
     input.addEventListener('click', handleClickInput)
   }
 
+  // The user chose a box, check for win, robot turn, check for win
   function handleClickInput(evt) {
-    evt.target.closest('td').innerHTML = '🧑‍💻'
+    evt.target.closest('td').innerHTML = HUMAN
     if (hasWin()) {
       return endGame()
     }
@@ -100,37 +103,23 @@
 
   // Choose a random available box
   function runRobotTurn() {
-    let box = choose(boxes)
-    let count = 0
-    while (count <= boxes.length && !box.querySelector('input')) {
-      count++
-      box = choose(boxes)
+    const robotBoxes = shuffle(boxes)
+    while (robotBoxes.length) {
+      const box = robotBoxes.shift()
+      if (box.querySelector('input')) {
+        box.innerHTML = ROBOT
+        break
+      }
     }
-    box.innerHTML = '🤖'
   }
 
   // Determine win
   function hasWin() {
-    // Check horizontal wins
-    for (let row of rows) {
-      if (hasAllSame(row)) {
-        return true
-      }
-    }
-
-    // Check vertical wins
-    for (let col of columns) {
-      if (hasAllSame(col)) {
-        return true
-      }
-    }
-
-    // Check diagonal wins
-    for (let diag of diagonals) {
-      if (hasAllSame(diag)) {
-        return true
-      }
-    }
+    return (
+      rows.some(hasAllSame) ||
+      columns.some(hasAllSame) ||
+      diagonals.some(hasAllSame)
+    )
   }
 
   // Determine if every cell matches
@@ -143,10 +132,21 @@
   // Display game over, cancel events
   function endGame() {
     gameOver.hidden = false
-
     for (const input of inputs) {
       input.removeEventListener('click', handleClickInput)
       input.remove()
     }
+  }
+
+  // Shuffle a copy of the input array
+  function shuffle(array) {
+    array = array.slice(0)
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i)
+      const temp = array[i]
+      array[i] = array[j]
+      array[j] = temp
+    }
+    return array
   }
 </script>
