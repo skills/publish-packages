@@ -49,7 +49,7 @@ jobs:
           fi
 
           echo "Make a branch"
-          $BRANCH=cd
+          BRANCH=cd
           git checkout -b $BRANCH
 
           echo "Make an empty commit"
