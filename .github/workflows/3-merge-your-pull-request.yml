@@ -55,7 +55,7 @@ jobs:
           sed -r 's/<details id=([0-9]+) open>/<details id=\1>/g' README.md > tmp
           mv tmp README.md
 
-          echo "Add 'open' to step 3, 4, and X"
+          echo "Add 'open' to step 4, 5, and X"
           sed -r "s/<details id=([45X])>/<details id=\1 open>/g" README.md > tmp
           mv tmp README.md
 
