@@ -49,7 +49,7 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 <details id=1>
 <summary><strong>:pencil: Step 1: Create the workflow file</strong></summary>
 
-### :wave: Welcome to "Publish packages"!
+### Welcome to "Publish packages"! :wave:
 
 First, take a moment to examine the image below. It shows the relationship between _continuous integration_, _continuous delivery_ and _continuous deployment_.
 
@@ -104,7 +104,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 <details id=2>
 <summary><strong>:ship: Step 2: Add a Dockerfile</strong></summary>
 
-### :tada: You created a publishing workflow!
+### You created a publishing workflow! :tada:
 
 We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
@@ -129,7 +129,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 <details id=3>
 <summary><strong>:shipit: Step 3: Merge your pull request</strong></summary>
 
-### :heart: Let's get publishing!
+### Let's get publishing! :heart:
 
 You can now [merge](https://help.github.com/articles/github-glossary/#merge) your pull request!
 
@@ -198,7 +198,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 <details id=5>
 <summary><strong>:runner: Step 5: Run your image</strong></summary>
 
-### Nicely done grabbing your Docker image! :sparkles:
+### Nicely done grabbing your Docker image! :relaxed:
 
 Let's trying running it.
 
@@ -241,7 +241,7 @@ Here's a recap of all the tasks you've accomplished in your repository:
 
 - Publish your own packages from your projects.
 - We'd love to hear what you thought of this course [in our community forum](https://github.community/c/education/github-learning-lab/34).
-- [Take another GitHub Learn Course](https://github.com/githublearn).
+- [Take another GitHub Learn course](https://github.com/githublearn).
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
