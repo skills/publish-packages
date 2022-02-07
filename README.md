@@ -97,7 +97,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 
 <!--
   <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the first step.
+  Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
@@ -122,7 +122,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 
 <!--
   <<< Author notes: Step 3 >>>
-  Start this step by acknowledging the first step.
+  Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
@@ -143,7 +143,7 @@ You can now [merge](https://help.github.com/articles/github-glossary/#merge) you
 
 <!--
   <<< Author notes: Step 4 >>>
-  Start this step by acknowledging the first step.
+  Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
@@ -191,7 +191,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 
 <!--
   <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the first step.
+  Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
