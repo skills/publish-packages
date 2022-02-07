@@ -9,11 +9,11 @@
 
 # GitHub Actions: Publish to GitHub Packages
 
-_This course will walk you through using GitHub Actions to get your code in a deployable state once your CI workflows have completed._
+_This course will walk you through using GitHub Actions to publish your project to a Docker image._
 
 <!--
   <<< Author notes: Start of the course >>>
-  Include start button, a note about actions minutes,
+  Include start button, a note about Actions minutes,
   and tell the learner why they should take the course.
   Each step should be wrapped in <details>/<summary>, with an `id` set.
   The start <details> should have `open` as well.
@@ -31,10 +31,10 @@ _This course will walk you through using GitHub Actions to get your code in a de
 GitHub Actions makes it easier than ever to incorporate continuous delivery (CD) into your repositories. This course will teach you what is needed to test and deliver artifacts that are ready for deployment.
 
 - **Who is this for**: Developers, DevOps engineers, full stack developers, cloud engineers.
-- **What you'll learn**: Continuous delivery, save and access build artifacts, package management, how to publish to GitHub Packages.
+- **What you'll learn**: Continuous delivery, how to save and access build artifacts, package management, how to publish to GitHub Packages.
 - **What you'll build**: We will build a Docker image that runs a small game.
 - **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/githublearn/hello-github-actions) and [Continuous Integration](https://lab.github.com/githublearn/continuous-integration).
-- **How long**: This course is 5 steps and takes less than 30 minutes.
+- **How long**: This course is five steps long and takes less than 30 minutes to complete.
 
 </details>
 
@@ -200,7 +200,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 
 ### Nicely done grabbing your Docker image! :sparkles:
 
-Let's trying running it!
+Let's trying running it.
 
 ### :keyboard: Activity: Run your image
 
