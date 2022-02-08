@@ -131,7 +131,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 
 ### Let's get publishing! :heart:
 
-You can now [merge](https://help.github.com/articles/github-glossary/#merge) your pull request!
+You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
 ### :keyboard: Activity: Merge your pull request
 
