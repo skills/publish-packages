@@ -128,7 +128,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 -->
 
 <details id=3>
-<summary><h2>:shipit: Step 3: Merge your pull request</h2></summary>
+<summary><h2>:squirrel: Step 3: Merge your pull request</h2></summary>
 
 _Let's get publishing! :heart:_
 
