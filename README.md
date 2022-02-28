@@ -21,10 +21,11 @@ _This course will walk you through using GitHub Actions to publish your project 
 -->
 
 <details id=0 open>
-<summary><strong>:golf: Start</strong></summary>
+<summary><h2>:golf: Start</h2></summary>
 
-### [![start-course](https://user-images.githubusercontent.com/1221423/154366775-5491926f-9ed1-4a4a-a229-0810c0ed7e5e.svg)](https://github.com/githublearn/publish-packges/generate)
+[![start-course](https://user-images.githubusercontent.com/1221423/154366775-5491926f-9ed1-4a4a-a229-0810c0ed7e5e.svg)](https://github.com/githublearn/publish-packges/generate)
 
+> When you select **Start course** or **Use this template**, you will be prompted to create a new repository.
 > We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).<br>
 > After you make your own repository, wait about 20 seconds and refresh. I will go to the next step.
 
@@ -47,9 +48,9 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 -->
 
 <details id=1>
-<summary><strong>:pencil: Step 1: Create the workflow file</strong></summary>
+<summary><h2>:pencil: Step 1: Create the workflow file</h2></summary>
 
-### Welcome to "Publish packages"! :wave:
+_Welcome to "Publish packages"! :wave:_
 
 First, take a moment to examine the image below. It shows the relationship between _continuous integration_, _continuous delivery_ and _continuous deployment_.
 
@@ -102,9 +103,9 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 -->
 
 <details id=2>
-<summary><strong>:ship: Step 2: Add a Dockerfile</strong></summary>
+<summary><h2>:ship: Step 2: Add a Dockerfile</h2></summary>
 
-### You created a publishing workflow! :tada:
+_You created a publishing workflow! :tada:_
 
 We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
@@ -127,9 +128,9 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 -->
 
 <details id=3>
-<summary><strong>:shipit: Step 3: Merge your pull request</strong></summary>
+<summary><h2>:shipit: Step 3: Merge your pull request</h2></summary>
 
-### Let's get publishing! :heart:
+_Let's get publishing! :heart:_
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
@@ -148,9 +149,9 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 -->
 
 <details id=4>
-<summary><strong>:rowboat: Step 4: Pull your image</strong></summary>
+<summary><h2>:rowboat: Step 4: Pull your image</h2></summary>
 
-### Now things are running! :sparkles:
+_Now things are running! :sparkles:_
 
 Whoa, now things are running! This may take a few minutes. This might take a tiny amount of time, so grab your popcorn :popcorn: and wait for the build to finish before moving on.
 
@@ -196,9 +197,9 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 -->
 
 <details id=5>
-<summary><strong>:runner: Step 5: Run your image</strong></summary>
+<summary><h2>:runner: Step 5: Run your image</h2></summary>
 
-### Nicely done grabbing your Docker image! :relaxed:
+_Nicely done grabbing your Docker image! :relaxed:_
 
 Let's trying running it.
 
@@ -225,9 +226,9 @@ Let's trying running it.
 -->
 
 <details id=X>
-<summary><strong>:checkered_flag: Finish</strong></summary>
+<summary><h2>:checkered_flag: Finish</h2></summary>
 
-### Congratulations friend, you've completed this course!
+_Congratulations friend, you've completed this course!_
 
 <img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
 
