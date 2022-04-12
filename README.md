@@ -23,7 +23,7 @@ _This course will walk you through using GitHub Actions to publish your project 
 <details id=0 open>
 <summary><h2>:golf: Start</h2></summary>
 
-[![start-course](https://user-images.githubusercontent.com/1221423/154366775-5491926f-9ed1-4a4a-a229-0810c0ed7e5e.svg)](https://github.com/githublearn/publish-packges/generate)
+[![start-course](https://user-images.githubusercontent.com/1221423/154366775-5491926f-9ed1-4a4a-a229-0810c0ed7e5e.svg)](https://github.com/skills/publish-packges/generate)
 
 > When you select **Start course** or **Use this template**, you will be prompted to create a new repository.
 > We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).<br>
@@ -34,7 +34,7 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 - **Who is this for**: Developers, DevOps engineers, full stack developers, cloud engineers.
 - **What you'll learn**: Continuous delivery, how to save and access build artifacts, package management, how to publish to GitHub Packages.
 - **What you'll build**: We will build a Docker image that runs a small game.
-- **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/githublearn/hello-github-actions) and [Continuous Integration](https://lab.github.com/githublearn/continuous-integration).
+- **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/skills/hello-github-actions) and [Continuous Integration](https://lab.github.com/skills/continuous-integration).
 - **How long**: This course is five steps long and takes less than 30 minutes to complete.
 
 </details>
@@ -241,8 +241,8 @@ Here's a recap of all the tasks you've accomplished in your repository:
 ### What's next?
 
 - Publish your own packages from your projects.
-- We'd love to hear what you thought of this course [in our community forum](https://github.community/c/education/github-learning-lab/34).
-- [Take another GitHub Learn course](https://github.com/githublearn).
+- We'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions).
+- [Take another GitHub Skills course](https://github.com/skills).
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
@@ -255,6 +255,6 @@ Here's a recap of all the tasks you've accomplished in your repository:
 
 ---
 
-Get help: [Post in our community forum](https://github.community/c/education/github-learning-lab/34) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2022 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
