@@ -5,8 +5,6 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-<img src=https://user-images.githubusercontent.com/1221423/156946964-e0c7b948-724a-4662-b085-5d76b12a3a29.svg width=300 align=right>
-
 # GitHub Actions: Publish to GitHub Packages
 
 _This course will walk you through using GitHub Actions to publish your project to a Docker image._
@@ -21,7 +19,7 @@ _This course will walk you through using GitHub Actions to publish your project 
 -->
 
 <details id=0 open>
-<summary><h2>:golf: Start</h2></summary>
+<summary><h2>Start</h2></summary>
 
 [![start-course](https://user-images.githubusercontent.com/1221423/154366775-5491926f-9ed1-4a4a-a229-0810c0ed7e5e.svg)](https://github.com/skills/publish-packges/generate)
 
@@ -48,7 +46,7 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 -->
 
 <details id=1>
-<summary><h2>:pencil: Step 1: Create the workflow file</h2></summary>
+<summary><h2>Step 1: Create the workflow file</h2></summary>
 
 _Welcome to "Publish packages"! :wave:_
 
@@ -103,7 +101,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 -->
 
 <details id=2>
-<summary><h2>:ship: Step 2: Add a Dockerfile</h2></summary>
+<summary><h2>Step 2: Add a Dockerfile</h2></summary>
 
 _You created a publishing workflow! :tada:_
 
@@ -128,7 +126,7 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 -->
 
 <details id=3>
-<summary><h2>:chipmunk: Step 3: Merge your pull request</h2></summary>
+<summary><h2>Step 3: Merge your pull request</h2></summary>
 
 _Let's get publishing! :heart:_
 
@@ -149,7 +147,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 -->
 
 <details id=4>
-<summary><h2>:rowboat: Step 4: Pull your image</h2></summary>
+<summary><h2>Step 4: Pull your image</h2></summary>
 
 _Now things are running! :sparkles:_
 
@@ -197,7 +195,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 -->
 
 <details id=5>
-<summary><h2>:runner: Step 5: Run your image</h2></summary>
+<summary><h2>Step 5: Run your image</h2></summary>
 
 _Nicely done grabbing your Docker image! :relaxed:_
 
@@ -226,7 +224,7 @@ Let's trying running it.
 -->
 
 <details id=X>
-<summary><h2>:checkered_flag: Finish</h2></summary>
+<summary><h2>Finish</h2></summary>
 
 _Congratulations friend, you've completed this course!_
 
