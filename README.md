@@ -25,7 +25,7 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 - **Who is this for**: Developers, DevOps engineers, full stack developers, cloud engineers.
 - **What you'll learn**: Continuous delivery, how to save and access build artifacts, package management, how to publish to GitHub Packages.
 - **What you'll build**: We will build a Docker image that runs a small game.
-- **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/skills/hello-github-actions) and [Continuous Integration](https://lab.github.com/skills/continuous-integration).
+- **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/skills/hello-github-actions) and [Continuous Integration](https://github.com/skills/continuous-integration).
 - **How long**: This course is five steps long and takes less than 30 minutes to complete.
 
 ## How to start this course
