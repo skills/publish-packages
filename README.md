@@ -181,7 +181,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 
 ### :keyboard: Activity: Pull your image
 
-1. Copy and paste the `pull` command from the package instructions into your terminal. See: [publish-packages/game](/pkgs/container/publish-packages%2Fgame). It should look something like this:
+1. Copy and paste the `pull` command from the package instructions into your terminal. See: [publish-packages/game](../../pkgs/container/publish-packages%2Fgame). It should look something like this:
    - `docker pull docker.pkg.github.com/YOURNAME/publish-packages/game:TAG`
    ![screenshot of the pull command on the GitHub package page](https://i.imgur.com/pFQgfSZ.png)<!-- This screenshot should be changed. -->
 1. Replace `YOURNAME` with your GitHub username.
