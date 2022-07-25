@@ -80,16 +80,26 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
      publish:
        runs-on: ubuntu-latest
        steps:
-         - uses: actions/checkout@v2
+         - uses: actions/checkout@v3
          # Add your test steps here if needed...
-         - name: Build container
-           uses: docker/build-push-action@v1
+         - name: Docker meta
+           id: meta
+           uses: docker/metadata-action@v4
            with:
-             username: YOURNAME
+             images: ghcr.io/YOURNAME/publish-packages/game
+             tags: type=sha
+         - name: Login to GHCR
+           uses: docker/login-action@v2
+           with:
+             registry: ghcr.io
+             username: ${{ github.repository_owner }}
              password: ${{ secrets.GITHUB_TOKEN }}
-             registry: docker.pkg.github.com
-             repository: YOURNAME/publish-packages/game
-             tag_with_sha: true
+         - name: Build container
+           uses: docker/build-push-action@v3
+           with:
+             context: .
+             push: true
+             tags: ${{ steps.meta.outputs.tags }}
    ```
 1. Replace `YOURNAME` with your username.
 1. Commit your changes.
@@ -171,7 +181,7 @@ We will use this token to log in to Docker, and authenticate with the package.
 1. Open your terminal (Bash or Git Bash recommended)
 1. Use the following command to log in:
     ```
-    docker login docker.pkg.github.com -u USERNAME -p TOKEN
+    docker login ghcr.io -u USERNAME -p TOKEN
     ```
 1. Replace `USERNAME` with your GitHub username
 1. Replace `TOKEN` with the Personal Access Token you just created
@@ -182,13 +192,13 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 ### :keyboard: Activity: Pull your image
 
 1. Copy and paste the `pull` command from the package instructions into your terminal. It should look something like this:
-   - `docker pull docker.pkg.github.com/YOURNAME/publish-packages/game:TAG`
+   - `docker pull ghcr.io/YOURNAME/publish-packages/game:TAG`
    ![screenshot of the pull command on the GitHub package page](https://i.imgur.com/pFQgfSZ.png)<!-- This screenshot should be changed. -->
    - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Packages** heading link_
 1. Replace `YOURNAME` with your GitHub username.
 1. Replace `TAG` with the image tag.
 1. Press **Enter**.
-1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for docker.pkg.github.com/YOURNAME/publish-packages/game:TAG`.
+1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for ghcr.io/YOURNAME/publish-packages/game:TAG`.
    ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)<!-- This screenshot should be changed. -->
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
