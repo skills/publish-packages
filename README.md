@@ -112,7 +112,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 
 _You created a publishing workflow! :tada:_
 
-We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
+We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
 ### :keyboard: Activity: Add a Dockerfile
 
@@ -133,11 +133,11 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 -->
 
 <details id=3>
-<summary><h2>Step 3: Merge your pull request</h2></summary>
+<summary><h2>Step 3: Merge your changes</h2></summary>
 
 _Let's get publishing! :heart:_
 
-You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
+You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your changes!
 
 ### :keyboard: Activity: Merge your changes
 
