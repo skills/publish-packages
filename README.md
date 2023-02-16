@@ -164,7 +164,7 @@ Before we can use this Docker image, you will need to generate a [personal acces
 - write:packages
 - read:packages
 
-![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://i.imgur.com/Ue9BJoV.png)<!-- Now that the box for read:packages is the child of the box for write:packages, this screenshot should be changed. -->
+![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://user-images.githubusercontent.com/3250463/219254714-82bb1da5-33b1-491b-97c0-b25f51494f6a.png)
 
 We will use this token to log in to Docker, and authenticate with the package.
 
