@@ -187,7 +187,7 @@ We will use this token to log in to Docker, and authenticate with the package.
 1. Replace `TOKEN` with the Personal Access Token you just created
 1. Press **Enter**
 
-If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
+If everything went well, :crossed_fingers: you should see `Login Succeeded` in your terminal.
 
 ### :keyboard: Activity: Pull your image
 
