@@ -199,7 +199,7 @@ If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
 1. Replace `TAG` with the image tag.
 1. Press **Enter**.
 1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for ghcr.io/YOURNAME/publish-packages/game:TAG`.
-   ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)<!-- This screenshot should be changed. -->
+   ![screenshot of successful Docker image output](https://user-images.githubusercontent.com/3250463/219255178-3c943a6f-6c15-4f59-9002-228249b1c469.png)
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
