@@ -68,8 +68,10 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 ### :keyboard: Activity: Create the workflow file
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Open the pull request I made for you from the `cd` branch.
-1. Add a new file at `.github/workflows/publish.yml`.
+1. Navigate to the **Code** tab.
+1. From the **main** branch dropdown, click on the **cd** branch.
+1. Navigate to the `.github/workflows/` folder, then select **Add file** and click on **Create new file**.
+1. In the **Name your file...** field, enter `publish.yml`.
 1. Add the following to the `publish.yml` file:
    ```yml
    name: Publish to Docker
@@ -77,6 +79,8 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
      push:
        branches:
          - main
+   permissions:
+     packages: write
    jobs:
      publish:
        runs-on: ubuntu-latest
@@ -94,6 +98,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
    ```
 1. Replace `YOURNAME` with your username.
 1. Commit your changes.
+1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:cd`.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -109,7 +114,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 
 _You created a publishing workflow! :tada:_
 
-We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
+We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set of instructions that get stored in a `Docker Image`. If you'd like, you can [learn more about Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
 ### :keyboard: Activity: Add a Dockerfile
 
@@ -130,16 +135,16 @@ We will add a `Dockerfile` in this pull request. The `Dockerfile` contains a set
 -->
 
 <details id=3>
-<summary><h2>Step 3: Merge your pull request</h2></summary>
+<summary><h2>Step 3: Merge your changes</h2></summary>
 
 _Let's get publishing! :heart:_
 
-You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
+You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your changes!
 
-### :keyboard: Activity: Merge your pull request
+### :keyboard: Activity: Merge your changes
 
-1. Click **Merge pull request**.
-1. Delete the branch `cd` (optional).
+1. Merge your changes from `cd` into `main`. If you created the pull request in step 1, just open that PR and click on **Merge pull request**. If you did not create the pull request earlier, you can do it now by following the instructions in step 1.
+1. (optional) Delete the branch `my-pages`.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
