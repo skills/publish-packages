@@ -223,7 +223,7 @@ Let's trying running it.
    ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)<!-- This screenshot should be changed. -->
 1. Use the following command to run a container from your image:
    ```
-   docker run -d -it --rm -p 8080:80 --name ttt <YOUR_IMAGE_NAME:TAG>
+   docker run -d --rm <YOUR_IMAGE_NAME:TAG>
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
 1. Replace `TAG` with the image tag under the `TAG` column
