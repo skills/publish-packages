@@ -85,7 +85,8 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
      publish:
        runs-on: ubuntu-latest
        steps:
-         - uses: actions/checkout@v3
+         - name: Checkout
+           uses: actions/checkout@v3
          # Add your test steps here if needed...
          - name: Docker meta
            id: meta
@@ -100,7 +101,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
              username: ${{ github.repository_owner }}
              password: ${{ secrets.GITHUB_TOKEN }}
          - name: Build container
-           uses: docker/build-push-action@v3
+           uses: docker/build-push-action@v4
            with:
              context: .
              push: true
