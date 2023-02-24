@@ -85,16 +85,27 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
      publish:
        runs-on: ubuntu-latest
        steps:
-         - uses: actions/checkout@v3
+         - name: Checkout
+           uses: actions/checkout@v3
          # Add your test steps here if needed...
-         - name: Build container
-           uses: docker/build-push-action@v1
+         - name: Docker meta
+           id: meta
+           uses: docker/metadata-action@v4
            with:
-             username: YOURNAME
-             password: ${{ secrets.GITHUB_TOKEN }}
+             images: ghcr.io/YOURNAME/publish-packages/game
+             tags: type=sha
+         - name: Login to GHCR
+           uses: docker/login-action@v2
+           with:
              registry: ghcr.io
-             repository: YOURNAME/publish-packages/game
-             tag_with_sha: true
+             username: ${{ github.repository_owner }}
+             password: ${{ secrets.GITHUB_TOKEN }}
+         - name: Build container
+           uses: docker/build-push-action@v4
+           with:
+             context: .
+             push: true
+             tags: ${{ steps.meta.outputs.tags }}
    ```
 1. Replace `YOURNAME` with your username.
 1. Commit your changes.
