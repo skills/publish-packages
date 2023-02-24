@@ -61,7 +61,7 @@ First, take a moment to examine the image below. It shows the relationship betwe
 **Continuous integration** (CI) is a practice where developers integrate tested code into a shared branch several times per day. **Continuous delivery** (CD) is the next phase of **continuous integration** (CI), where we deploy our changes to the world.
 
 [**Docker**](https://www.docker.com/why-docker) is an engine that allows you to run containers.
-Containers are packages of software that can run reliably in different environments. Containers include everything needed to run the application. Containers are lightweight in comparison to virtual machines. A **dockerfile** is a text document that contains all the commands and instructions necessary to build a Docker Image. A **Docker image** is an executable package comprised of code, dependencies, libraries, a runtime, environment variables, and configuration files. A **Docker container** is a runtime instance of a Docker Image.
+Containers are packages of software that can run reliably in different environments. Containers include everything needed to run the application. Containers are lightweight in comparison to virtual machines. A **Dockerfile** is a text document that contains all the commands and instructions necessary to build a Docker Image. A **Docker image** is an executable package comprised of code, dependencies, libraries, a runtime, environment variables, and configuration files. A **Docker container** is a runtime instance of a Docker Image.
 
 We'll start by creating the workflow file to publish a Docker image to GitHub Packages.
 
@@ -92,7 +92,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
            with:
              username: YOURNAME
              password: ${{ secrets.GITHUB_TOKEN }}
-             registry: docker.pkg.github.com
+             registry: ghcr.io
              repository: YOURNAME/publish-packages/game
              tag_with_sha: true
    ```
@@ -170,29 +170,32 @@ Before we can use this Docker image, you will need to generate a [personal acces
 - write:packages
 - read:packages
 
-![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://i.imgur.com/Ue9BJoV.png)
+![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://user-images.githubusercontent.com/3250463/219254714-82bb1da5-33b1-491b-97c0-b25f51494f6a.png)
 
 We will use this token to log in to Docker, and authenticate with the package.
 
 1. Open your terminal (Bash or Git Bash recommended)
 1. Use the following command to log in:
     ```
-    docker login docker.pkg.github.com -u USERNAME -p TOKEN
+    docker login ghcr.io -u USERNAME -p TOKEN
     ```
 1. Replace `USERNAME` with your GitHub username
 1. Replace `TOKEN` with the Personal Access Token you just created
 1. Press **Enter**
 
-If everything went well, 🤞 you should see `Login Succeeded` in your terminal.
+If everything went well, :crossed_fingers: you should see `Login Succeeded` in your terminal.
 
 ### :keyboard: Activity: Pull your image
 
 1. Copy and paste the `pull` command from the package instructions into your terminal. It should look something like this:
-   - `docker pull docker.pkg.github.com/YOURNAME/js-build/tic-tac-toe:f29`
-   ![screenshot of the pull command on the GitHub package page](https://i.imgur.com/pFQgfSZ.png)
+   - `docker pull ghcr.io/YOURNAME/publish-packages/game:TAG`
+   ![screenshot of the pull command on the GitHub package page](https://user-images.githubusercontent.com/3250463/219254981-9ff949fa-4d01-46e3-9e3d-b8ce3710c2a9.png)
+   - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Packages** heading link_
+1. Replace `YOURNAME` with your GitHub username.
+1. Replace `TAG` with the image tag.
 1. Press **Enter**.
-1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for docker`.
-   ![screenshot of successful Docker image output](https://i.imgur.com/i07kF2J.png)
+1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for ghcr.io/YOURNAME/publish-packages/game:TAG`.
+   ![screenshot of successful Docker image output](https://user-images.githubusercontent.com/3250463/219255178-3c943a6f-6c15-4f59-9002-228249b1c469.png)
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
@@ -212,15 +215,15 @@ Let's trying running it.
 
 ### :keyboard: Activity: Run your image
 
-1. Find your image information by typing `Docker image ls`.
-   ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)
+1. Find your image information by typing `docker image ls`.
+   ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)<!-- This screenshot should be changed. -->
 1. Use the following command to run a container from your image:
    ```
-   docker run -d -it --rm -p 8080:80 --name ttt <YOUR_IMAGE_NAME:TAG>
+   docker run -d --rm <YOUR_IMAGE_NAME:TAG>
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
 1. Replace `TAG` with the image tag under the `TAG` column
-   ![example of running the docker command listed above](https://i.imgur.com/hr6N9nk.png)
+   ![example of running the docker command listed above](https://user-images.githubusercontent.com/3250463/219255534-f11b20e8-65de-4f4a-a033-f312ddf507fb.png)
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
