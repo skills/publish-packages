@@ -230,14 +230,15 @@ Let's trying running it.
 1. Find your image information by typing `docker image ls`.
    ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)<!-- This screenshot should be changed. -->
 1. Use the following command to run a container from your image:
-   ```
-   docker run -d --rm <YOUR_IMAGE_NAME:TAG>
+   ```bash
+   docker run -dp 8080:80 --rm <YOUR_IMAGE_NAME:TAG>
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
 1. Replace `TAG` with the image tag under the `TAG` column
-   ![example of running the docker command listed above](https://user-images.githubusercontent.com/3250463/219255534-f11b20e8-65de-4f4a-a033-f312ddf507fb.png)
+   ![example of running the docker command listed above](https://user-images.githubusercontent.com/3250463/219255534-f11b20e8-65de-4f4a-a033-f312ddf507fb.png)<!-- This screenshot should be changed. -->
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
+1. (optional) You can open [localhost:8080](http://localhost:8080) to see the page you just created.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
