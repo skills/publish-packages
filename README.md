@@ -132,7 +132,7 @@ We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set o
 
 1. In the `cd` branch, create `Dockerfile` at the project root and include:
    ```dockerfile
-   FROM nginx:1.17
+   FROM nginx:1.24-alpine
    COPY . /usr/share/nginx/html
    ```
 1. Commit your changes.
