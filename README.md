@@ -234,7 +234,7 @@ Let's trying running it.
    docker run -dp 8080:80 --rm <YOUR_IMAGE_NAME:TAG>
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
-1. Replace `TAG` with the image tag under the `TAG` column
+1. Replace `TAG` with the image tag under the `TAG` column.
    ![example of running the docker command listed above](https://user-images.githubusercontent.com/3250463/219255534-f11b20e8-65de-4f4a-a033-f312ddf507fb.png)<!-- This screenshot should be changed. -->
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
