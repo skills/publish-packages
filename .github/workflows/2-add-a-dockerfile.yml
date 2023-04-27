@@ -63,7 +63,7 @@ jobs:
         run: ./.github/script/check-file.sh
         env:
           FILE: "Dockerfile"
-          SEARCH: "FROM nginx:1.17"
+          SEARCH: "FROM nginx:1.24-alpine"
 
       # Update README to close <details id=2> and open <details id=3>
       # and set STEP to '3'
