@@ -237,7 +237,7 @@ Let's trying running it.
 1. Replace `TAG` with the image tag under the `TAG` column.
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
-1. (optional) You can open [localhost:8080](http://localhost:8080) to see the page you just created.
+1. Optionally, you can open [localhost:8080](http://localhost:8080) to see the page you just created.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
