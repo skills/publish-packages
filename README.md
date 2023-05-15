@@ -93,6 +93,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
          - main
    permissions:
      packages: write
+     contents: read
    jobs:
      publish:
        runs-on: ubuntu-latest
