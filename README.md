@@ -2,7 +2,7 @@
   <<< Author notes: Header of the course >>>
   Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
   In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
+  Add your open source license, GitHub uses the MIT license.
 -->
 
 # Publish to GitHub Packages
@@ -120,6 +120,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
              tags: ${{ steps.meta.outputs.tags }}
    ```
 1. Replace `YOURNAME` with your username.
+1. Make sure that the image name is unique.
 1. Commit your changes.
 1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:cd`.
 1. Wait about 20 seconds then refresh this page for the next step.
@@ -143,7 +144,7 @@ We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set o
 
 1. In the `cd` branch, create `Dockerfile` at the project root and include:
    ```dockerfile
-   FROM nginx:1.17
+   FROM nginx:1.24-alpine
    COPY . /usr/share/nginx/html
    ```
 1. Commit your changes.
@@ -197,14 +198,14 @@ Before we can use this Docker image, you will need to generate a [personal acces
 
 We will use this token to log in to Docker, and authenticate with the package.
 
-1. Open your terminal (Bash or Git Bash recommended)
+1. Open your terminal (Bash or Git Bash recommended).
 1. Use the following command to log in:
+    ```bash
+    docker login ghcr.io -u USERNAME
     ```
-    docker login ghcr.io -u USERNAME -p TOKEN
-    ```
-1. Replace `USERNAME` with your GitHub username
-1. Replace `TOKEN` with the Personal Access Token you just created
-1. Press **Enter**
+1. Replace `USERNAME` with your GitHub username.
+1. Enter your new Personal Access Token as the password.
+1. Press **Enter**.
 
 If everything went well, :crossed_fingers: you should see `Login Succeeded` in your terminal.
 
@@ -241,14 +242,14 @@ Let's trying running it.
 1. Find your image information by typing `docker image ls`.
    ![screenshot of output from Docker image ls command: lists docker images, REPOSITORY TAG and docker URL](https://i.imgur.com/UAwRXiq.png)<!-- This screenshot should be changed. -->
 1. Use the following command to run a container from your image:
-   ```
-   docker run -d --rm <YOUR_IMAGE_NAME:TAG>
+   ```bash
+   docker run -dp 8080:80 --rm <YOUR_IMAGE_NAME:TAG>
    ```
 1. Replace `YOUR_IMAGE_NAME` with your image name under the `REPOSITORY` column.
-1. Replace `TAG` with the image tag under the `TAG` column
-   ![example of running the docker command listed above](https://user-images.githubusercontent.com/3250463/219255534-f11b20e8-65de-4f4a-a033-f312ddf507fb.png)
+1. Replace `TAG` with the image tag under the `TAG` column.
 1. Press **Enter**.
 1. If everything went well, you will see hash value as output on your screen.
+1. Optionally, you can open [localhost:8080](http://localhost:8080) to see the page you just created.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
 </details>
@@ -290,4 +291,4 @@ Here's a recap of all the tasks you've accomplished in your repository:
 
 Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-&copy; 2022 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
