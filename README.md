@@ -10,12 +10,9 @@
 _Use GitHub Actions to publish your project to a Docker image._
 
 <!--
-  <<< Author notes: Start of the course >>>
+  <<< Author notes: Course start >>>
   Include start button, a note about Actions minutes,
   and tell the learner why they should take the course.
-  Each step should be wrapped in <details>/<summary>, with an `id` set.
-  The start <details> should have `open` as well.
-  Do not use quotes on the <details> tag attributes.
 -->
 
 <details id=0 open>
@@ -27,9 +24,15 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 - **What you'll learn**: Continuous delivery, how to save and access build artifacts, package management, how to publish to GitHub Packages.
 - **What you'll build**: We will build a Docker image that runs a small game.
 - **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/skills/hello-github-actions) and [Continuous Integration](https://github.com/skills/continuous-integration).
-- **How long**: This course is five steps long and takes less than 30 minutes to complete.
+- **How long**: This course  takes less than 30 minutes to complete.
 
-## How to start this course
+In this course, you will:
+
+1.
+2.
+3.
+
+### How to start this course
 
 <!-- For start course, run in JavaScript:
 'https://github.com/new?' + new URLSearchParams({
