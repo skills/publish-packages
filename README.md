@@ -15,8 +15,7 @@ _Use GitHub Actions to publish your project to a Docker image._
   and tell the learner why they should take the course.
 -->
 
-<details id=0 open>
-<summary><h2>Welcome</h2></summary>
+## Welcome
 
 GitHub Actions makes it easier than ever to incorporate continuous delivery (CD) into your repositories. This course will teach you what is needed to test and deliver artifacts that are ready for deployment.
 
@@ -24,7 +23,7 @@ GitHub Actions makes it easier than ever to incorporate continuous delivery (CD)
 - **What you'll learn**: Continuous delivery, how to save and access build artifacts, package management, how to publish to GitHub Packages.
 - **What you'll build**: We will build a Docker image that runs a small game.
 - **Prerequisites**: We recommend you first complete the following courses: [Hello, GitHub Actions](https://github.com/skills/hello-github-actions) and [Continuous Integration](https://github.com/skills/continuous-integration).
-- **How long**: This course  takes less than 30 minutes to complete.
+- **How long**: This course takes less than 30 minutes to complete.
 
 In this course, you will:
 
@@ -54,7 +53,7 @@ In this course, you will:
    - Scroll down and click the **Create repository** button at the bottom of the form.
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-</details>
+
 
 <!--
   <<< Author notes: Step 1 >>>
@@ -64,8 +63,7 @@ In this course, you will:
   Encourage users to open new tabs for steps!
 -->
 
-<details id=1>
-<summary><h2>Step 1: Create the workflow file</h2></summary>
+## Step 1: Create the workflow file
 
 _Welcome to "Publish packages"! :wave:_
 
@@ -128,7 +126,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:cd`.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--
   <<< Author notes: Step 2 >>>
@@ -136,8 +134,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
   Define terms and link to docs.github.com.
 -->
 
-<details id=2>
-<summary><h2>Step 2: Add a Dockerfile</h2></summary>
+## Step 2: Add a Dockerfile
 
 _You created a publishing workflow! :tada:_
 
@@ -153,7 +150,7 @@ We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set o
 1. Commit your changes.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--
   <<< Author notes: Step 3 >>>
@@ -161,8 +158,7 @@ We will add a `Dockerfile` to the `cd` branch. The `Dockerfile` contains a set o
   Define terms and link to docs.github.com.
 -->
 
-<details id=3>
-<summary><h2>Step 3: Merge your changes</h2></summary>
+## Step 3: Merge your changes
 
 _Let's get publishing! :heart:_
 
@@ -174,7 +170,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 1. (optional) Delete the branch `cd`.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--
   <<< Author notes: Step 4 >>>
@@ -182,8 +178,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
   Define terms and link to docs.github.com.
 -->
 
-<details id=4>
-<summary><h2>Step 4: Pull your image</h2></summary>
+## Step 4: Pull your image
 
 _Now things are running! :sparkles:_
 
@@ -225,7 +220,7 @@ If everything went well, :crossed_fingers: you should see `Login Succeeded` in y
    ![screenshot of successful Docker image output](https://user-images.githubusercontent.com/3250463/219255178-3c943a6f-6c15-4f59-9002-228249b1c469.png)
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
-</details>
+
 
 <!--
   <<< Author notes: Step 5 >>>
@@ -233,8 +228,7 @@ If everything went well, :crossed_fingers: you should see `Login Succeeded` in y
   Define terms and link to docs.github.com.
 -->
 
-<details id=5>
-<summary><h2>Step 5: Run your image</h2></summary>
+## Step 5: Run your image
 
 _Nicely done grabbing your Docker image! :relaxed:_
 
@@ -255,15 +249,14 @@ Let's trying running it.
 1. Optionally, you can open [localhost:8080](http://localhost:8080) to see the page you just created.
 1. _We can't automatically verify this step for you, so please continue on to the next step below!_
 
-</details>
+
 
 <!--
   <<< Author notes: Finish >>>
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-<details id=X>
-<summary><h2>Finish</h2></summary>
+## Finish
 
 _Congratulations friend, you've completed this course!_
 
@@ -283,7 +276,7 @@ Here's a recap of all the tasks you've accomplished in your repository:
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
-</details>
+
 
 <!--
   <<< Author notes: Footer >>>
