@@ -1,26 +1,24 @@
 name: Step 3, Merge your pull request
 
-# This step triggers after pushing to main
-# This step sets STEP to 4
-# This step closes <details id=3> and opens <details id=4> <id=5> and <id=X>
+# This step triggers after pushing to main.
+# This workflow updates from step 3 to step 4.
 
-# This will run every time we push to main
-# Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
+# This will run every time we push to main.
+# Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
   push:
     branches:
       - main
 
-# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+# Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
-  # Need `contents: read` to checkout the repository
-  # Need `contents: write` to update the step metadata
+  # Need `contents: read` to checkout the repository.
+  # Need `contents: write` to update the step metadata.
   contents: write
 
 jobs:
-  # Get the current step from .github/script/STEP so we can
-  # limit running the main job when the learner is on the same step.
+  # Get the current step to only run the main job when the learner is on the same step.
   get_current_step:
     name: Check current step number
     runs-on: ubuntu-latest
@@ -29,7 +27,7 @@ jobs:
         uses: actions/checkout@v3
       - id: get_step
         run: |
-          echo "current_step=$(cat ./.github/script/STEP)" >> $GITHUB_OUTPUT
+          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
@@ -38,29 +36,29 @@ jobs:
     needs: get_current_step
 
     # We will only run this action when:
-    # 1. This repository isn't the template repository
-    # 2. The STEP is currently 3
-    # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
-    # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
+    # 1. This repository isn't the template repository.
+    # 2. The step is currently 3.
+    # Reference: https://docs.github.com/en/actions/learn-github-actions/contexts
+    # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
           && needs.get_current_step.outputs.current_step == 3 }}
 
-    # We'll run Ubuntu for performance instead of Mac or Windows
+    # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
 
     steps:
-      # We'll need to check out the repository so that we can edit the README
+      # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Let's get all the branches
+          fetch-depth: 0 # Let's get all the branches.
 
-      # Custom step finish here: close 3; open 4, 5, and X; set STEP to X
+      # Custom step finish here: close 3; open 4, 5, and X; set step to X
       - name: Update to open remaining steps
         run: |
           echo "Check that we are on FROM_STEP"
-          if [ "$(cat .github/script/STEP)" != $FROM_STEP ]
+          if [ "$(cat .github/steps/-step.txt)" != $FROM_STEP ]
           then
             echo "Current step is not $FROM_STEP"
             exit 0
@@ -69,23 +67,17 @@ jobs:
           echo "Make sure we are on the main branch"
           git checkout main
 
-          echo "Remove 'open' from any <details> tags"
-          sed -r 's/<details id=([0-9]+) open>/<details id=\1>/g' README.md > tmp
-          mv tmp README.md
+          echo "TODO UPDATE NEEDED"
 
-          echo "Add 'open' to step 4, 5, and X"
-          sed -r "s/<details id=([45X])>/<details id=\1 open>/g" README.md > tmp
-          mv tmp README.md
-
-          echo "Update the STEP file to TO_STEP"
-          echo "$TO_STEP" > .github/script/STEP
+          echo "Update the step file to TO_STEP"
+          echo "$TO_STEP" > .github/steps/-step.txt
 
           echo "Commit the files, and push to main"
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git add .github/script/STEP
-          git commit --message="Update to $TO_STEP in STEP and README.md"
+          git add .github/steps/-step.txt
+          git commit --message="Update to $TO_STEPin step and README.md"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
