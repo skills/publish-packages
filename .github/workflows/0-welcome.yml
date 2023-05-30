@@ -75,7 +75,7 @@ jobs:
 
           echo "Push"
           git push --set-upstream origin $BRANCH
-          
+
           echo "Restore main"
           git checkout main
         env:

@@ -24,9 +24,9 @@ We will use this token to log in to Docker, and authenticate with the package.
 
 1. Open your terminal (Bash or Git Bash recommended).
 1. Use the following command to log in:
-    ```bash
-    docker login ghcr.io -u USERNAME
-    ```
+   ```bash
+   docker login ghcr.io -u USERNAME
+   ```
 1. Replace `USERNAME` with your GitHub username.
 1. Enter your new Personal Access Token as the password.
 1. Press **Enter**.
@@ -37,7 +37,7 @@ If everything went well, :crossed_fingers: you should see `Login Succeeded` in y
 
 1. Copy and paste the `pull` command from the package instructions into your terminal. It should look something like this:
    - `docker pull ghcr.io/YOURNAME/publish-packages/game:TAG`
-   ![screenshot of the pull command on the GitHub package page](https://user-images.githubusercontent.com/3250463/219254981-9ff949fa-4d01-46e3-9e3d-b8ce3710c2a9.png)
+     ![screenshot of the pull command on the GitHub package page](https://user-images.githubusercontent.com/3250463/219254981-9ff949fa-4d01-46e3-9e3d-b8ce3710c2a9.png)
    - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Packages** heading link_
 1. Replace `YOURNAME` with your GitHub username.
 1. Replace `TAG` with the image tag.
