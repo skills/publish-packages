@@ -58,10 +58,10 @@ jobs:
 
       # Check the learner added intended contents to the file.
       - name: Verify publish.yml file contents
-        run: ./.github/script/check-file.sh
-        env:
-          FILE: ".github/workflows/publish.yml"
-          SEARCH: "docker/build-push-action"
+        uses: skills/action-check-file@v1
+        with:
+          file: ".github/workflows/publish.yml"
+          search: "docker/build-push-action"
 
       # In README.md, switch step 1 for step 2.
       - name: Update to step 2
