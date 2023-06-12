@@ -54,32 +54,11 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches.
 
-      # Custom step finish here: close 3; open 4, 5, and X; set step to X
-      - name: Update to open remaining steps
-        run: |
-          echo "Check that we are on FROM_STEP"
-          if [ "$(cat .github/steps/-step.txt)" != $FROM_STEP ]
-          then
-            echo "Current step is not $FROM_STEP"
-            exit 0
-          fi
-
-          echo "Make sure we are on the main branch"
-          git checkout main
-
-          echo "TODO UPDATE NEEDED"
-
-          echo "Update the step file to TO_STEP"
-          echo "$TO_STEP" > .github/steps/-step.txt
-
-          echo "Commit the files, and push to main"
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add README.md
-          git add .github/steps/-step.txt
-          git commit --message="Update to $TO_STEPin step and README.md"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FROM_STEP: 3
-          TO_STEP: X
+      # In README.md, switch step 3 for step 45X.
+      - name: Update to step 45X
+        uses: skills/action-update-step@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 3
+          to_step: 45X
+          branch_name: cd
