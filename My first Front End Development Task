@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADUCHE</title>
+    <link rel="stylesheet" href="Aduuchefinal.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+
+</head>
+<body >
+  <!-- <div class="container"> -->
+    <!-- <div class="div-1">
+      <img src="aduuche leaf.png" style="width:35px; height:18px; padding-left: 18px; margin-top: 6px;; float: left;">
+        <span style="color:white; font-size:23px;">aduuche</b><span style="color: olivedrab; font-size:23px;">market</span>
+        <button style="color:white; background-color: rgb(130,180,57); width:85px;height: 32px; float: right;margin-right: 25px;border-radius: 8px;border-color: transparent;">Buy now</button>
+    </div>   -->
+    <div class="div-2" >
+      <div style="margin-left: 34px;">Aduuche
+      <b style="color:rgb(240, 114, 68); margin-left: -15px;">.</b>
+      <img src="envato logo.jpeg" style="height: 48px;width: 70px; float: left; margin-right: -18px;margin-top: 5px;">
+    </div>
+           <a href="#" class="menu">HOME</a>
+           <a href="#" class="menu2">SERVICES</a>
+            <a href="#" class="menu3">WORKSHOP</a>
+            <a href="#" class="menu4">ABOUT:</a>
+            <a href="#" class="menu5">RECIPES</a>
+            <a href="#" class="menu6">...</a>
+                   
+                      
+       <button class="visit">VISIT WORKSHOP</button>     
+     </div> 
+    <!-- </div> -->
+      <div class="body-cover">
+        
+        <div class="div-3"><img src="female cook.jpeg" alt="female cook" style="width: 100%;margin-top: -29px;">
+              </div>  
+              <div style="margin-left: 350px; margin-top: -537px; height: 200px;">
+                
+                <p style="font-size: 16px;color: rgb(240, 114, 68);font-size: 22px;margin-top: 50px; margin-left: -70px;font-weight: bold;">
+                  COOKING IS EASY, WE WILL PROVE IT TO YOU!</p>
+                <span style="font-size:55px;color:white;margin-left: -130px;">Next Cooking Class Starts In:</span><br><br><br><br>
+                <!-- This is the countdown timer -->
+                <div class="containerforcountdown">
+                    
+                    <div id="countdown">
+                      <ul>
+                        <li ><span id="days" ></span>days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                      </ul>
+                    </div>
+                    </div>
+                <!-- this is the end of the countdown timer -->
+                <button class="button1">ENROL NOW</button>
+                <button class="button2">OUR FEEDBACK</button>
+              </div>
+              <div class="slider">
+                <a href="http://127.0.0.1:5500/Aduuchefinal.html" class="slider2"><</a> 
+                <a href="fine background.webp" class="slider2">></a></b></div>
+      <div style="margin-top: 50px;"><br>
+        <center style="color: #8cb37d; font-size: 11px;"><b>ROUND THE GLOBE</b></center>
+      <p><center style="font-size: 40px;">Our Cooking Classes</center><br></p>
+      <center> <img src="fork.png" alt="" ></center></div>
+    </div>
+      <div class="tableofchefs">
+          
+
+                                                                  <div class="col-1">
+                                                                    <a href=""><img src="man cooking.jpeg" alt="" style="width: 100%;height: 159px;"></a>
+                                                                    <div class="col1b"><center><a href="" style="color: white; text-decoration: none; "><br>Floyd Weaver</a></center></div>
+                                                                    <div class="col1b-2">
+                                                                      <!-- To turn an image into a perfect circle, 
+                                                                        make the height and width the same and make the border-radius 50% and border 1px or 2px solid _color of choice 
+                                                                      Here, I use "<p><i class="fa fa-heart" aria-hidden="true">
+                                                                            </i></p>" to insert the heart icon.
+                                                                          Note: this won't work without this link: 
+                                                                          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> at the header section -->
+                                                                      <img src="floyd.jpeg" alt="" style="width: 55px; height: 55px; border-radius: 50%; border: 4px solid white; overflow:hidden;margin-top: -31px;float: right;margin-right: 29px;">
+                                                                      <br><br><p></p><center>
+                                                                        <a href="#" style="text-decoration: none;color: black;font-family:Arial, Helvetica,;">
+                                                                          <p class="Seafood">Seafood & Wine</p></a>
+                                                                      <br><p style="color:#9f9f9f;">Short ribs fatback kevin 
+                                                                        <br> spare ribs biltong pig <br> bacon corned beef <br> kielbasa porchetta. </p></center>
+                                                                      <div class="love-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                                                                        <a href=""><p><i class="fa fa-heart" aria-hidden="true"><m style="color: black; font-size: 12px;">15</m>
+                                                                        </i></p></a></div>
+                                                                      <div class="text-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                                                                        <p><i class="fa fa-comments" aria-hidden="true"><m style="color: black; font-size: 14px;">0</m>
+                                                                        </i></p></div>
+                                                                      <div class="money-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                                                                      <p><i class="fa fa-money" aria-hidden="true"><m style="color: black; font-size: 12px;">$350</m>
+                                                                      </i></p></div>
+                                                                </div>
+                                                                    </div>
+
+          <div class="col-2">
+            <a href=""><img src="ladies_cook.png" alt="" style="width: 100%;height: 159px;"></a>
+            <div class="col2b"><center><a href="" style="color: white; text-decoration: none; ">
+              <br>Susie Perez</a></center></div>
+            <div class="col2b-2">
+              <img src="susie.jpeg" alt="" style="width: 55px; height: 55px; border-radius: 50%;
+               border: 4px solid white; overflow:hidden; margin-top: -31px;float: right;margin-right: 29px;">
+              <br><br><p></p><center>
+                <a href="#" style="text-decoration: none;color: black;font-family:Arial, Helvetica,;">
+                  <p class="Seafood">International Cuisine</p></a>
+              <br><p style="color:#9f9f9f;">Short ribs fatback kevin <br> 
+                spare ribs biltong pig <br> bacon corned beef <br> kielbasa porchetta. </p></center>
+              <div class="love-icon" style="text-align: center; padding-top: 19px;color: #fc8155;">
+                <a href=""><p><i class="fa fa-heart" aria-hidden="true"><m style="color: black; font-size: 12px;">13</m></i></p></a></div>
+              <div class="text-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                <p><i class="fa fa-comments" aria-hidden="true"><m style="color: black; font-size: 12px;">0</m></i></p></div>
+              <div class="money-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+              <p><i class="fa fa-money" aria-hidden="true"><m style="color: black; font-size: 10px;">$359</m></i></p></div>
+        </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <a href=""><img src="lady_with_cake.PNG" alt="" style="width: 100%;height: 159px;"></a>
+            <div class="col3b"><center><a href="" style="color: white; text-decoration: none; ">
+              <br>Owen Bradley</a></center></div>
+            <div class="col3b-2">
+              <img src=" owen.jpeg" alt="" style="width: 55px; height: 55px; border-radius: 50%; border: 4px solid white; overflow:hidden;
+               margin-top: -31px;float: right;margin-right: 29px;">
+              <br><br><p></p><center>
+                <a href="#" style="text-decoration: none;color: black;font-family:Arial, Helvetica,;">
+                  <p class="Seafood"> French Desserts</p></a>
+              <br><p style="color:#9f9f9f;">Short ribs fatback kevin <br> spare ribs biltong pig 
+                <br> bacon corned beef <br> kielbasa porchetta. </p></center>
+              <div class="love-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                <a href=""><p><i class="fa fa-heart" aria-hidden="true"><m style="color: black; font-size: 12px;">15</m>
+                </i></p></a></div>
+              <div class="text-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+                <p><i class="fa fa-comments" aria-hidden="true"><m style="color: black; font-size: 14px;">0</m>
+                </i></p></div>
+              <div class="money-icon" style="text-align: center; padding-top: 18px;color: #fc8155;">
+              <p><i class="fa fa-money" aria-hidden="true"><m style="color: black; font-size: 12px;">$350</m>
+              </i></p></div>
+        </div>
+            </div>
+          </div>
+      </div>
+        <div class="div-5">
+            <div style="width: 50%; height: 620px;;float: left;">
+              <img src="sieving.jpeg" style="height: 100%; width: 100%;"></div>
+            <div style="width: 50%; height: 620px;background-color: #f2f2f2;float: left;">
+              <p style="margin-top: 90px;margin-left: 110px;font-size: 12px;color: #fc8155;">OUR ACHIEVEMENTS</p>
+              <p style="margin-left: 110px;font-size: 36px;">Hello, Welcome to Kruton!</p><br><br>
+                <img src="trophy.PNG" style="margin-left: 110px; margin-top: -20px;"> 
+                <div style="font-size: 20px; margin-top: -40px;font-family: Times New Roman; margin-left: 165px;font-size: 24px;">We Are Winners of 50 Competitions </div>
+                  <br>
+                  <p  style="font-size: 14px;font-family: Arial, Helvetica, sans-serif; color: #545454; margin-left: 169px;">Salami corned beef short loin sausage meatloaf fatback
+                     <br> andouille kielbasa frankfurter sirloin alcatra beef ribs.</p>
+                  <img src="baby.png" style="margin-left: 110px; margin-top: 30px;"> 
+                <div style="font-size: 20px; margin-top: -48px;font-family: Times New Roman; margin-left: 166px;font-size: 24px;">27 Professional Chefs-Trainers </div>
+                  <br>
+                  <p  style="font-size: 14px;font-family: Arial, Helvetica, sans-serif; color: #545454; margin-left: 169px;">Ham hock jerky tail kevin, buffalo shoulder doner venison  
+                    <br> leberkas pig beef burgdoggen flank ribeye picanha <br> burgdoggen.</p>
+                  <img src="timer clock.png" style="margin-left: 110px; margin-top: 25px;"> 
+                <div style="font-size: 20px; margin-top: -52px;font-family: Times New Roman; margin-left: 166px;font-size: 24px;">Guaranteed Fast Employment </div>
+                  <br>
+                  <p  style="font-size: 14px;font-family: Arial, Helvetica, sans-serif; color: #545454; margin-left: 169px;">Ball tip landjaeger pork chop, kielbasa shank filet mignon 
+                    <br> cow burgdoggen cupim buffalo porchetta. Ribeye beef ribs<br>  flank.</p>
+            </div>
+            <div style="width: 50%; height: 500px;float: left;background-image: url(background.jpeg);">
+              <br> <br><br>
+              <b style="color:#9fc886; font-size: 10px;margin-left: 38px;">TESTIMONIALS</b> 
+              <br><m style="font-size: 30px;margin-left: 38px;margin-top: 600px;"> Reviews of Our Students</m>
+              <br><br><br><br>
+              <p style="margin-left: 44px; font-style: italic;color: #9f9f9f;">
+                Proin fermentum porttitor urna, nec iaculis sapien placerat <br>
+                non. Cras est nisi, suscipit at. </p><br>
+                <div style="font-size: 13px;font-style: italic;line-height: 23px; margin-left: 44px; font-style: italic;color: #9f9f9f;">
+                  Etiam consequat dictum ipsum et auctor. Curabitur hendrerit augue at viverra <br>
+                  mollis. Quisque tristique nibh arcu, at accumsan nibh scelerisque vitae. <br>
+                  Vestibulum dolor tellus, accumsan ac ligula non, pulvinar semper libero. Ut <br>
+                  eget diam consectetur sapien pulvinar luctus. Duis hendrerit, dolor sed rutrum 
+                  <br> porttitor, dolor nunc mattis mauris, vitae posuere metus nisi quis tortor vitae 
+                  <br> posuere.</div><br>
+                  <p style="font-size: 14px;margin-left: 44px;font-size: 25px;">Alexander Lamb</p>
+                  <div style="font-size: 10px;color: #fc8155;margin-left: 44px;">FORMER STUDENT / CHEF</div>
+                  <p class="sign"><img src="sign2.jpeg" alt="signature"></p>
+              </div>
+            <div style="width: 50%;height: 500px;float: left;"><img src="alex_50.jpeg" alt="" style="width: 100%;height: 100%;"></div>
+                   </div>
+                   <div class="slider_for_reviews">
+                    <a href="http://127.0.0.1:5500/Aduuchefinal.html" class="slider2"><</a> 
+                    <a href="fine background.webp" class="slider2">></a></b></div>
+          <div style="margin-top: 50px;"><br>
+            <center style="color: rgb(240, 114, 68); font-size: 11px;"><b>UPDATED SCHEDULE</b></center>
+          <p><center style="font-size: 40px;letter-spacing: -2px;">Timetable of Classes</center><br></p>
+          <img src="green fork.jpeg" alt="" style="margin-left: 577px;height: 20px;width: 20px;"></div>
+       
+        <div >
+           <p style="margin-top:30px" > 
+            <div  style="color: white;text-align: center;
+            font-size: 13px;background-color: #fd8348;float: left;margin-left: 80px;height: 40px;width: 130px;padding-top: 12px;">MONDAY</div>
+          <div class="timet1">TUESDAY</div>
+          <div class="timet2">WEDNESDAY</div>
+          <div class="timet2">THURSDAY</div>
+          <div class="timet2">FRIDAY</div>
+          <div class="timet2">SATURDAY</div>
+          <div class="timet2">SUNDAY</div>
+        </p>
+        <br><br><br><br>
+      </div>
+          <div class="Curabitur_div">
+              <div><img src="Curabitur.jpeg" alt="" class="Curabitur" height="100%">
+                </div>
+                <div style="margin-top: -90px;float: right;margin-right: 460px;font-size: 20px; "><b> 
+                  <a href="" style="text-decoration: none; color: black;"><span class="Curabitur">
+                    Curabitur gravida dui quam</span></a>
+                </b> <p></p>
+                  <p style="margin-top: 13px;"><img src="calendar.png" style="height: 25px;width: 23px; ">
+                    <p style="margin-top: -24px;margin-left: 35px;font-size: 12px;color: #545454;">
+                      29 APR, 19 - 11 JUN, 23</p>
+                </div>
+                <div style="margin-top: -50px;margin-left:405px;"><img src="clock.png" style="height: 20px;">
+                    <p style="margin-top: -22px;margin-left: 25px;font-size: 12px;color: #545454;">12:00 AM - 12:00 AM</p></div>
+                    <div style="margin-top: -16px;margin-left: 569px;"><img src="admin.png" style="height: 19px; width: 19px;">
+                      <p style="margin-top: -22px;font-size: 12px;color: #545454;margin-left: 30px;"> ADMIN</p></div>
+              <button class="aboutclass">ABOUT CLASS</button>
+          </div>
+                  <br><br>
+          <div class="Curabitur_div">
+            <div><img src="nullam.jpeg" alt="" class="Curabitur2">
+              </div>
+              <div style="margin-top: -90px;float: right;margin-right: 430px;font-size: 20px; "><b> 
+                <a href="" style="text-decoration: none; color: black;"><span class="Curabitur">Nullam pharetra tristique purus</span></a>
+              </b> <p></p>
+                <p style="margin-top: 13px;"><img src="calendar.png" style="height: 25px;width: 23px; ">
+                  <p style="margin-top: -24px;margin-left: 24px;font-size: 12px;color: #545454;">
+                    4 MAR, 19 - 30 NOV, 23 </p>
+              </div>
+              <div style="margin-top: -50px;margin-left: 394px;"><img src="clock.png" style="height: 20px; ">
+                  <p style="margin-top: -22px;margin-left: 20px;font-size: 12px;color: #545454;">12:00 AM - 12:00 AM</p></div>
+                  <div style="margin-top: -16px;margin-left: 525px;"><img src="admin.png" style="height: 19px; width: 19px;">
+                    <p style="margin-top: -22px;font-size: 12px;color: #545454;margin-left: 20px;"> ADMIN</p></div>
+            <button class="aboutclass">ABOUT CLASS</button>
+        </div>
+          <br><br>
+        <div class="Curabitur_div3">
+          <div><img src="cras.jpeg" alt="" class="Curabitur3">
+            </div>
+                  <div style="margin-top: -90px;float: right; margin-right: 490px;font-size: 20px;"><b> 
+                    <a href="" style="text-decoration: none; color: black;">
+                      <span class="Curabitur">Cras viverra diam mattis</span></a>
+                  </b> <p></p>
+                    <p style="margin-top: 13px;"><img src="calendar.png" style="height: 25px;width: 23px; ">
+                      <p style="margin-top: -24px;margin-left: 34px;font-size: 12px;color: #545454;">
+                        4 MAR, 19 - 30 AUG, 23</p>
+                  </div>
+            <div style="margin-top: -50px;margin-left: 410px;"><img src="clock.png" style="height: 20px; ">
+                <p style="margin-top: -22px;margin-left: 20px;font-size: 12px;color: #545454;">12:00 AM - 12:00 AM</p></div>
+                            <div style="margin-top: -16px;margin-left: 550px;"><img src="admin.png" style="height: 19px; width: 19px;">
+                              <p style="margin-top: -22px;font-size: 12px;color: #545454;margin-left: 22px;"> ADMIN</p></div>
+                      <button class="aboutclass">ABOUT CLASS</button>
+      </div>
+      <!-- here                          -->
+           <div style="background-color: #9fc886;height: 695px;width: 100%;margin-top: 150px;background-image: url('egg_bowl.jpeg');background-size:cover ;">
+            
+            <br><br><br><br><br><br><p></p>
+                <div style="color: #79bf4d; font-size: 13px;">
+                  <center> ROUND THE GLOBE <p style="font-size: 40px; color: white;">FAQ / Our Location</center><br></p> 
+                  <center><img src="fork.png" alt="" ></center>
+                </div>
+             
+                </div>
+                              <!-- Google map -->
+                <div id="map-container-google-2" class="z-depth-1-half-map-container" style="height: 500px;float: right;margin-top: -450px;margin-right: 80px;">
+                  <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                    style="border:0; height: 345px;width: 500px;border-radius: 5px; margin-top: 12px; margin-right: -45px;" allowfullscreen></iframe>
+                </div>
+
+
+                  <a href=""><div style="background-color:#7abe51;height: 45px;; width: 41%;float: left;margin-top: -450px;
+                  border-radius: 5px; margin-left: 80px;">
+                  <img src="edit.png" alt="" height="22px" style="margin-left: 30px;margin-top: 10px;">
+                  <center style="margin-top: -25px;font-size: 13px;color: white;"> LOREM IPSUM DOLOR SIT AMET, CONSECTETUR? </center>
+                  <span style="color: white;float: right;padding-right: 25px;margin-top: -15px;">--</span></div></a>
+                        <div style="float: left;margin-top: -375px;width: 41%;color: white;margin-left: 95px;line-height: 30px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                          Confirming your acceptance guarantees the job is yours. Usuallybr
+                          there are other candidates in the process at this point so ensure you <br>are committed adipiscing elit.</div>
+                              <a href="">
+                      <!--hover effect not functional yet-->    
+                      <div class="vestibulum" style="background-color:white;height: 45px; width: 41%;float: left;margin-top: -255px;
+                      border-radius: 5px; margin-left: 80px;" >
+                      <img src="edit2.png" alt="" height="22px" style="margin-left: 30px;margin-top: 10px;">
+                <center style="margin-top: -25px;font-size: 13px;color: black;"> VESTIBULUM TEMPOR, LOREM EU PELLENTESQUE ? </center>
+                <span style="color: green;float: right;padding-right: 25px;margin-top: -15px;">+</span></div></a>
+                          
+                        <div class="vestibulum" style="background-color:white;height: 45px; width: 41%;float: left;margin-top: -199px;
+                        border-radius: 5px; margin-left: 80px;" >
+                        <img src="edit2.png" alt="" height="22px" style="margin-left: 30px;margin-top: 10px;">
+                        <center style="margin-top: -25px;font-size: 13px;color: black;">  DUIS MOLESTIE VESTIBULUM CONGUE? </center>
+                        <span style="color: green;float: right;padding-right: 25px;margin-top: -15px;">+</span></div></a>
+
+                <div class="vestibulum" style="background-color:white;height: 45px; width: 41%;float: left;margin-top: -143px;
+                border-radius: 5px; margin-left: 80px;" >
+                <img src="edit2.png" alt="" height="22px" style="margin-left: 30px;margin-top: 10px;">
+                <center style="margin-top: -25px;font-size: 13px;color: black;"> MORBI VITAE NISL EGET EX PHARETRA EGESTAS? </center>
+                <span style="color: green;float: right;padding-right: 25px;margin-top: -15px;">+</span></div></a>
+                                 
+                        <div style="margin-top: 50px;"><br>
+                          <center style="color: rgb(240, 114, 68); font-size: 11px;">
+                            <br><br><br><br>
+                            <b>OUR TEAM OF PROFFESIONALS</b></center>
+                        <p><center style="font-size: 40px;letter-spacing: -2px;">Best Chefs of America</center><br></p>
+                        <img src="green fork.jpeg" alt="" style="margin-left: 530px;height: 20px;width: 20px;"></div>
+                        <br><br>
+                  
+                                   <center>              
+                      
+                      <!-- the stationary div -->
+                      <div class="container" style="margin-right: 40px;">
+                        <img src="alexlambs.png" style="height: 280px;width: 270px; border-radius: 5px 5px 0px 0px;">
+                              <div style="height: 100px; width: 269px; background-color: #ee885d;
+                                  margin-left: 1px;margin-top:-11px;color: white; 
+                                  padding-top: 20px;font-size: 30px;">Alexander Lamb1
+                                 <p style="font-size: 12px;">MASTERCHEF</p> </div>
+                              
+                              <!-- overlay div -->
+                              <div class="overlay overlayBottom">
+                                  
+                                  <a href="Alexanchor" style="text-decoration: none;color: white; ">
+                                    <div class="alexanchor">Alexander Lamb</div></a>
+                                  <p style="font-size: 12px;color: white;">MASTERCHEF </p>
+                  
+                                  <a href=""><img src="facebk.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 90px;margin-top: 5px;"></a>
+                                  <a href=""><img src="twitter.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href=""><img src="istagram.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href="view">
+                                    <div class="viewprofile" ><p style="margin-top: 12px;font-size: 12px;">VIEW PROFILE</p></div></a>
+                              </div>
+                      </div>
+                    </center>           
+
+                                         
+                    <center>              
+                      
+                      <!-- the stationary div -->
+                      <div class="container" style="float: right; margin-right: 30px;">
+                        <img src="alexlambs.png" style="height: 280px;width: 270px; border-radius: 5px 5px 0px 0px;">
+                              <div style="height: 100px; width: 269px; background-color: #ee885d;
+                                  margin-left: 1px;margin-top:-11px;color: white; 
+                                  padding-top: 20px;font-size: 30px;">Alexander Lamb2
+                                 <p style="font-size: 12px;">MASTERCHEF</p> </div>
+                              
+                              <!-- overlay div -->
+                              <div class="overlay overlayBottom">
+                                  
+                                  <a href="Alexanchor" style="text-decoration: none;color: white; ">
+                                    <div class="alexanchor">Alexander Lamb</div></a>
+                                  <p style="font-size: 12px;color: white;">MASTERCHEF </p>
+                  
+                                  <a href=""><img src="facebk.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 90px;margin-top: 5px;"></a>
+                                  <a href=""><img src="twitter.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href=""><img src="istagram.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href="view">
+                                    <div class="viewprofile" ><p style="margin-top: 12px;font-size: 12px;">VIEW PROFILE</p></div></a>
+                              </div>
+                      </div>
+                    </center> 
+                    
+                    <center>              
+                      
+                      <!-- the stationary div -->
+                      <div class="container" style="float: right; margin-right: 340px;margin-top: -375px;">
+                        <img src="alexlambs.png" style="height: 280px;width: 270px; border-radius: 5px 5px 0px 0px;">
+                              <div style="height: 100px; width: 269px; background-color: #ee885d;
+                                  margin-left: 1px;margin-top:-11px;color: white; 
+                                  padding-top: 20px;font-size: 30px;">Alexander Lamb3
+                                 <p style="font-size: 12px;">MASTERCHEF</p> </div>
+                              
+                              <!-- overlay div -->
+                              <div class="overlay overlayBottom">
+                                  
+                                  <a href="Alexanchor" style="text-decoration: none;color: white; ">
+                                    <div class="alexanchor">Alexander Lamb</div></a>
+                                  <p style="font-size: 12px;color: white;">MASTERCHEF </p>
+                  
+                                  <a href=""><img src="facebk.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 90px;margin-top: 5px;"></a>
+                                  <a href=""><img src="twitter.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href=""><img src="istagram.png" alt="" style="height: 20px;width: 20px;float: left;margin-left: 12px;margin-top: 5px;"></a>
+                                  <a href="view">
+                                    <div class="viewprofile" ><p style="margin-top: 12px;font-size: 12px;">VIEW PROFILE</p></div></a>
+                              </div>
+                      </div>
+                    </center> 
+                    
+                    
+                    <br><br><br>
+                    
+                                
+                                   <div class="Enrollmentform">
+                                    <img src="tomato.jpeg" alt="" style="width: 100%;height: 550px; margin-top: 90px;background-color: transparent;">
+                                   <center> <p style="font-size: 14px; color: #7abe51; margin-top:  -470px;">PLEASE REGISTER NOW!</p> 
+                                      <span style="color: black;font-size: 30px;margin-top: -350px;">Our Form for Enrollment</span></center>
+                                      <br>
+                                      <img src="fork.png" alt="" style="margin-left: 510px;margin-bottom: 35px;">
+                                    
+                                      <section >
+                                        <center><form action="submit" >
+                                          <input type="text" placeholder="FULL NAME" id="fullname" style="height: 30px; border-radius: 5px; padding-left:15px; background-color: transparent;border: 1px solid #e5e5e5; margin-right: 10px;font-size: 11px;font-family:alice ;">
+                                          <input type="email" placeholder="EMAIL ADDRESS" id="email" style="height: 30px;padding-left:15px;border-radius: 5px; background-color: transparent; border: 1px solid #e5e5e5;margin-right: 10px;font-size: 11px;font-family:alice ;" >
+                                          <input type="text" placeholder="PHONE NUMBER" id="number" style="height: 30px;padding-left:15px;border-radius: 5px; background-color: transparent; border: 1px solid #e5e5e5;margin-right: 10px;font-size: 11px;font-family:alice ;">
+                                          
+                                        
+                                                      <select style="height: 30px; background-color: transparent;color: #7e7b7b;border-radius: 5px; padding-left:15px;border: 1px solid #e5e5e5;font-size: 11px;font-family:alice ;">
+                                                         <option>COOKING CLASS</option>
+                                                         <option>BAKING & PASTRY</option>
+                                                         <option>EXOTIC CUISINES</option>
+                                                         <option>FRENCH DESSERTS</option>
+                                                         <option>INTERNATIONAL CUISINE</option>
+                                                          </select>
+                                          <br><br>
+                                          <textarea name="" id="textarea" cols="30" rows="7" style="width: 780px;background-color: transparent;padding: 15px;border-radius: 5px;font-size: 11px;font-family:alice ;">YOUR MEASSAGE...</textarea>
+                                          <br><br>
+                                          <center>
+                                            <a href="" style="padding: 15px;  background-color:#7ebc4c;border-radius: 50px; text-align: center;font-size: 11px;color: white;font-family: alice;text-decoration: none;" >ENROL NOW</a>
+                                          </a></center>
+                                        </form></center>
+                                    </section>                                                                                                                     
+                                                                        </div >
+                                                        
+                                              <div style="margin-top: 690px;"><br>
+                                                  <center style="color: rgb(240, 114, 68); font-size: 11px;">
+                                                       <br><br><br><br>
+                                                          <b>LATEST NEWS KRUTON</b></center>
+                                                          <p><center style="font-size: 40px;letter-spacing: -2px;">Our Fresh Blog Posts</center><br></p>
+                                                               <img src="green fork.jpeg" alt="" style="margin-left: 530px;height: 20px;width: 20px;"></div>    
+                                 <center><div style="margin-top: 20px;"> 
+                                  <a href="" class="anchor">ALL</a>
+                                  <a href="" class="anchor">RECIPES</a>
+                                  <a href="" class="anchor">CLASSES</a>
+                                  <a href="" class="anchor">COACH</a>
+                                  <a href="" class="anchor">STATUS</a>
+                                  <a href="" class="anchor">DETAILS</a>                  
+                                </div></center>
+                                  <center>
+                                    <div class="howtocook" style="border-radius: 3% 3% 0% 0%;">
+                                      <img src="ladies_cook.jpeg" alt="" style="height: 200px;width: 100%; border-radius: 3% 3% 0% 0%;">
+                                    
+                                      <div style="height: 40px;width: 100%;background-color:black;margin-top: -44px;opacity: 0.6;border-radius: 3% 3% 0% 0%;">
+                                        <img src="calendar.png" alt="" style=" width: 15px; float: left;margin-left: 35px;padding-top: 10px;">
+                                        <div style="float: left; margin-top: 7.5px;">
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;margin-left: 4px;">20 DEC. 18</a>
+                                        </div>
+                                          <img src="tag.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 10px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">RECIPES</a>
+                                        </div>
+                                        <img src="user.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 9px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 9px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">ADMIN</a>
+                                        </div>
+                                          </div>
+                                          <div style="margin-top: 35px;font-size: 19px;font-family: alice;;">How To Cook A Tender <br> Juicy Steak</div>
+                                          <div style="margin-top: 10px;color: #a59f9f;font-family: Arial Narrow;font-size: 14px;line-height:20px">
+                                            Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Donec <br> ligula ligula, facilisis et </div>
+                                          
+                                            <br><br><br><br><br>
+                                            
+                                                <!-- <a href="" style="text-decoration: none;" class="viewmore_div">
+                                                <div  style="height: 35px;background-color: white; width: 150px;color: #ee885d;border-radius: 50px;border: 1px solid #ee885d ;
+                                                padding-top: 12px;margin-top: 17px;font-size: 11px;font-family: alice;"  >
+                                                  <b >VIEW MORE</b></div></a> -->
+
+                                  </div>
+                                    
+                                    
+                                  <a href="" style="text-decoration: none;color: #ee885d;" class="viewmore">VIEW MORE</a>
+
+
+
+
+
+
+                                    <div class="howtocook2" style="border-radius: 3% 3% 0% 0%;">
+                                      <img src="cakelady.jpeg" alt="" style="height: 200px;width: 100%;border-radius: 3% 3% 0% 0%;">
+                                      <div style="height: 40px;width: 100%;background-color:black;margin-top: -44px;opacity: 0.6;border-radius: 3% 3% 0% 0%;">
+                                        <img src="calendar.png" alt="" style=" width: 15px; float: left;margin-left: 35px;padding-top: 10px;">
+                                        <div style="float: left; margin-top: 7.5px;">
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;margin-left: 4px;">20 DEC. 18</a>
+                                        </div>
+                                          <img src="tag.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 10px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">CLASSES </a>
+                                        </div>
+                                        <img src="user.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 9px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 9px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">ADMIN</a>
+                                        </div>
+                                          </div>
+                                          <div style="margin-top: 35px;font-size: 19px;font-family: alice;;">How To Cook Turkey <br> On Natural Gas Grills</div>
+                                          <div style="margin-top: 10px;color: #a59f9f;font-family: Arial Narrow;font-size: 14px;line-height:20px">
+                                            Integer vel tempor nunc. Morbi<br> tristique leo neque. Sed laoreet <br> massa lacinia, semper </div>
+                                    </div>
+
+                                    <a href="" style="text-decoration: none;color: #ee885d;" class="viewmore">VIEW MORE</a>
+
+
+                                    <div class="howtocook3" style="border-radius: 3% 3% 0% 0%;">
+                                      <img src="training session.PNG" alt="" style="height: 200px;width: 267.5px;padding-top: 1px; border-radius: 3% 3% 0% 0%; ">
+                                      <div style="height: 40px;width: 100%;background-color:black;margin-top: -44px;opacity: 0.6;border-radius: 3`% 3% 0% 0%;">
+                                        <img src="calendar.png" alt="" style=" width: 15px; float: left;margin-left: 35px;padding-top: 10px;">
+                                        <div style="float: left; margin-top: 7.5px;">
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;margin-left: 4px;">20 DEC. 18</a>
+                                        </div>
+                                          <img src="tag.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 10px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 10px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">COACH</a>
+                                        </div>
+                                        <img src="user.png" alt="" style=" width: 15px; float: left;margin-left: 10px;padding-top: 9px;">
+                                          <div >
+                                          <a href="" style="text-decoration: none;color:white;font-size: 9px;font-family: alice;float: left ;margin-top: 13px;margin-left: 5px;">ADMIN</a>
+                                        </div>
+                                          </div> 
+                                          <div style="margin-top: 35px;font-size: 19px;font-family: alice;;">The Importance Of<br> Food Elements</div>
+                                          <div style="margin-top: 10px;color: #a59f9f;font-family: Arial Narrow;font-size: 14px;line-height:20px">
+                                            Nam pharetra lacinia erat ac<br> pellentesque. Sisse potenti. Mauris <br> neque est, scelerisque quis  </div>
+                                    </div>
+                                    <a href="" style="text-decoration: none;color: #ee885d; margin-left: 760px;margin-top: -20px;" class="viewmore">VIEW MORE</a>
+                                  </center>
+                    
+                                      
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                  <div class="footer">
+                                    <div style="height: 130px;width: 100%; background-color: #86e14e;opacity: 0.8; margin-top: 180px;">
+                                  
+                                          <div style="margin-left: 120px;font-size: 30px;padding-top: 35px;color: white;">Do You Want to Get a 30% Discount?</div>
+                                            <p style="margin-left: 120px;font-size: 10px;color: white;padding-top: 8px;">FILL IN THE REGISTRATION FORM FOR THE COURSE NOW AND GET A DISCOUNT</p>
+                                          
+                                          <div><a href="" style="text-decoration: none;color: #ee885d; margin-left: 760px;margin-top: -45px;" class="fillform">VIEW MORE</a></div>
+                                                </div>
+
+                                                </div>
+                                                
+                                                <div style="float: left;height: 200px;width: 250px;border: 1px solid red;margin-left: 100px; margin-top: 0px;"></div>
+                                                <div style="float: left;height: 200px;width: 250px;border: 1px solid red;margin-left: 60px; margin-top: 90px;"></div>
+                                                <div style="float: left;height: 200px;width: 250px;border: 1px solid red;margin-left: 60px;margin-top: 90px;"></div>
+                                          
+                                        <div style="height: 90px;width: 90px;border-radius: 50%;background-color: #ee885d;float: right;"></div>
+                                        
+
+                                         
+                                          
+                                        </div>   
+                                          
+                                          <script src="aduuche.js"></script>              
+
+  <!--Start of Tawk.to Script: this is a live chat embedded here!-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/64ab5a8bcc26a871b0275ccf/1h4uljccm';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+   <br><br><br><br> <br><br><br><br> <br><br><br><br> 
+  <!--End of Tawk.to Script-->   
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+body{
+  background-image: url("body\ bg.jpeg");
+}
+.div-1{
+    width: 100%;
+    height: 53px;
+    margin-top: 0px;
+    padding-top: 10px;
+    background-color: rgb(38, 38, 38);
+}
+.div-2{
+    width: 100%;
+    height: 112px;
+    color:white;
+    padding-top: 12px;
+    background-color:#20252b;  
+    font-size: 50px;
+    margin-top: 12x;
+    z-index: 1;
+    position: fixed;
+ }
+.menu{
+    float: left;
+    margin-left: 350px;
+    font-size: 12px;
+    margin-top: -35px;
+    letter-spacing:1px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.menu2{
+    float: left;
+    padding-left: 420px;
+    font-size: 12px;
+    margin-top: -35px;
+    letter-spacing:1px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+.menu3{
+    float: left;
+    padding-left: 515px;
+    font-size: 12px;
+    margin-top: -35px;
+    letter-spacing:1px;
+    text-decoration: none;
+    color:white;
+    list-style: none;
+}
+.menu4{
+    float: left;
+    padding-left: 620px;
+    font-size: 12px;
+    margin-top: -35px;
+    letter-spacing:1px;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+.menu5{
+    float: left;
+    padding-left: 710px;
+    font-size: 12px;
+    margin-top: -35px;
+    letter-spacing:1px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  } 
+  .menu6{
+    float: left;
+    padding-left: 795px;
+    font-size: 12px;
+    margin-top: -38px;
+    letter-spacing:1px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  } 
+.visit{
+    background-color:rgb(121,196,77) ;
+    border-radius: 25px;
+    border-color: transparent;
+    box-shadow: none;
+    float: left;
+    margin-top: -45px;
+     margin-left: 885px;
+    height: 42px;
+    width: 180px;
+    text-align: center;
+    color: white;
+}
+ .div-4{
+
+    margin-top: -300px;
+    float: left;
+}  
+ .button1{
+    border-radius: 30px;
+    background-color: rgb(240, 114, 68);
+    height: 40px;
+    width: 170px;
+    box-shadow: none;
+    border-style: none;
+    color: white;
+    margin-top: 70px;
+    margin-left: -5px;
+ } 
+ .button2{
+    border-radius: 30px;
+    border: 0.5px solid white;
+    color: white;
+    background-color: transparent;
+    height: 40px;
+    width: 170px;
+    box-shadow: none;
+    margin-left: 10px;
+    margin-top: 120;
+ }
+ .button1:hover{
+    background-color: lightgreen;
+   }
+ .button2:hover{
+    background-color: lightgreen;
+   }
+/* table, th, td  {
+    border-left: 2px;
+    border-collapse: collapse; 
+    margin-left: 9px;
+    padding-right: 90px;
+    padding-left: 9px;
+    
+} */
+/* This is te code for the countdown timer */
+/* general styling */
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+     
+  .containerforcountdown {
+    color:limegreen;
+   text-align: center;
+    margin-left: -300px;
+    margin-top: -60px;
+  }
+  
+  h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  li {
+    display:inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+   
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+  .slider{
+    background-color:white;
+    width: 200px;
+    height: 100px;   
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 250px;
+    margin-left: 425px;
+    border-radius: 100%/90%;
+    text-decoration: none ;
+    text-align: center;
+    position: relative;
+    padding-top: 19px;
+    
+  }
+  .slider2{
+    text-decoration: none;
+    margin-left: 10px;
+    color: lightgreen;
+    font-weight: bold;
+    padding-top: 60px;
+  }
+  .tableofchefs{
+    width: 100%;
+    height: 300px;
+    
+  }
+  .col-1{
+    width: 27%;
+    /* margin-left: 54px; */
+    font-family: old ;
+    border: 9px solid black;
+    float: left;
+    margin-top: 20px;
+    height: 446px;
+  }
+  .col1b{
+    width: 100%;
+    height: 40.9px;
+    background-color: #8cc866;
+    margin-top: -4.1px;
+    color: white;
+    font-weight: bold;
+    /* z-index: 1; */
+    border: 1px solid #e5e5e5;
+  }
+  .col-2{
+    width: 27%;
+    height: 446px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 25px;  
+    border: 1px solid #e5e5e5; 
+    }
+  .col2b{
+    width:29%px;
+    height: 40.9px;
+    background-color: #8cc866;
+    margin-top: 142px;
+    color: white;
+    margin-top: -3.94px;
+    font-weight: bold;
+  }
+  .col-3{
+    width: 27%;
+    height: 446px;
+    float: left;
+    margin-top: -280px;
+    margin-left: 25px;  
+    border: 1px solid #e5e5e5;  
+  }
+  .col3b{
+    width: 100%;
+    height: 40.9px;
+    background-color: #8cc866;
+    margin-top: 142px;
+    color: white;
+    margin-top: -3.94px;
+    font-weight: bold;
+  }
+  .Seafood:hover{
+    color: #fa854f;
+    
+  }
+  .Seafood{
+    font-size: 19px;
+    color: #4b4c50;
+  }
+  /* Note: Floating three consecutive "divs" to the left align them horizotally as seen hereunder*/
+  .love-icon{
+    float: left;
+    width: 98px;
+    border: 0.1px solid #e5e5e5;
+    height: 50px;
+    margin-top: 44px;
+  }
+  .fa-heart{
+    text-decoration: none;
+    height: 5px;
+    color: #ee895d;
+  }
+  .fa-heart:hover{
+    
+    color:#8cc866 ;
+  }
+  
+  .text-icon{
+    float: left;
+    width: 98px;
+    border: 0.1px solid #e5e5e5;
+    height: 50px;
+    margin-top: 45px;
+  }
+  .money-icon{
+    float: left;
+    width: 93.7px;
+    border: 0.1px solid #e5e5e5;
+    height: 50px;
+    margin-top: 45px;
+  }
+  .div-5{
+    background-color: aqua;
+    height: 520px;
+    width: 100%;
+    margin-top: 295px;
+  }
+  .sign{
+    float: left;
+    margin-top: -60px;
+    margin-left: 430px;
+     
+  }
+  .slider_for_reviews{
+    background-color:white;
+    width: 200px;
+    height: 100px;   
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 580px;
+    margin-left: 440px;
+    border-radius: 100%/90%;
+    text-decoration: none ;
+    text-align: center;
+    position: relative;
+    padding-top: 9px;
+    
+  }
+  .timet1{
+    color: #545454;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    height: 40px;
+    width: 130px;
+    padding-top: 12px;
+    
+  }
+  .timet1:hover{
+    background-color: #fd8348;
+    }
+    .timet2{
+      color: #545454;
+      text-align: center;
+      font-size: 13px;
+      float: left;
+      border: 1px solid #e5e5e5;
+      height: 40px;
+      width: 130px;
+      padding-top: 12px;
+    }
+    .timet2:hover{
+      background-color: #fd8348;
+      }
+      .Curabitur_div{
+        margin-left: 80px;
+        height: 120px;
+        width: 910px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+      }
+      .Curabitur{
+        height: 120px;
+        width: 180px;
+        /* Note: Below is used to add border radius to the left hand side only:
+        5px(top-left),0px(top-right),0px(down-right),5px(down-left)- in clockwise direction */
+        border-radius: 5px 0px 0px 5px;
+        margin-right: px;
+      }
+      .Curabitur:hover{
+        color: #fd8348;
+      }
+      .aboutclass{
+        background-color:transparent;
+        border-radius: 25px;
+        border-color: #fd8348;
+        border: 1px solid;
+       font-size: 12px;
+        float: right;
+        margin-top: -80px;
+        margin-right: 35px;
+        height: 39px;
+        width: 155px;
+        text-align: center;
+        color: #fd8348;
+    }
+    .aboutclass:hover{
+      border-color: limegreen;
+      color: limegreen;
+    }
+    .Curabitur2{
+      height: 120px;
+      width: 180px;
+      /* Note: Below is used to add border radius to the left hand side only:
+      5px(top-left),0px(top-right),0px(down-right),5px(down-left)- in clockwise direction */
+      border-radius: 5px 0px 0px 5px;
+      margin-right: px;
+    }
+    .Curabitur2:hover{
+      color: #fd8348;
+    }
+    .Curabitur3{
+      height: 120px;
+      width: 180px;
+      /* Note: Below is used to add border radius to the left hand side only:
+      5px(top-left),0px(top-right),0px(down-right),5px(down-left)- in clockwise direction */
+      border-radius: 5px 0px 0px 5px;
+      margin-right: px;
+    }
+    .Curabitur3:hover{
+      color: #fd8348;
+    }
+    .Curabitur_div3{
+      margin-left: 80px;
+      height: 120px;
+      width: 910px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+    }
+    /* Section for FAQ and Google Map */
+    .faq{
+      height: 800px;
+      width: 100%;
+      background-color: #8cc866;
+      margin-top: -50px;
+    }
+    .g_map{
+      height: 900px;
+      width: 100%;
+      background-color: #fd8348;
+      margin-top: 700px;
+    }
+    
+     .herbertweb{
+      float: left;
+      margin-left: 435px;
+      margin-top: -475px;
+      
+    } 
+    .herbertweb_b{
+      background-color:#ee895d ;
+      height: 105px;
+      margin-top: -4.6px;
+    }
+    .herbert{
+    width: 100%;
+    height: 40.9px;
+    background-color: #ee895d;
+    margin-top: -6.94px;
+    color: white;
+    font-weight: bold;
+    
+  }
+  .col-1{
+    width: 27%;
+    height: 159px;
+    margin-left: 84px;
+    font-family: old ;
+    border: 1px solid #e5e5e5;
+  }
+  .alexlamb{
+    float: left;
+    margin-left: 789px;
+    margin-top: -164px;
+  }
+  .alexhover:hover{
+    color: black;
+    
+  }
+
+
+  .container img {
+    width: 120px;
+    height: 100px;
+    
+    
+  }
+  /* Note: container one have to float right so that the others "having the same class name" can float lefthand of container 1 */
+  .container {
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin-top: 15px;
+    /* Note: -ve margin was what scattered everything: BECAREFUL with-ve margin */
+    margin-left: 30px; 
+    float: left;
+  }
+    
+  .overlay {
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background-color: #9bcd9b;
+    
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlayBottom{
+    width: 269px;
+    height: 0;
+    bottom: 0;
+    margin-left: 65.5px; 
+    background-color: #ee885d;
+    
+  }
+  
+  .container:hover .overlayBottom{
+  height: 190px;
+  border-radius: 0px 0px 0px 5px;
+  }
+  .alexanchor:hover{
+    color: black;
+    font-size: 30px;
+  }
+  .alexanchor{
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+  }
+  .viewprofile{
+    background-color:white ;
+    border-radius: 25px;
+    border-color: transparent;
+    /* box-shadow: none; */
+    float: left;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-right:-90px ;
+    height: 42px;
+    width: 180px;
+    text-align: center;
+    color: #79bf4d;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    }
+    .viewprofile:hover{
+      color: #ee885d;
+    }
+    .Enrollmentform{
+height: 200px;
+width: 100%;
+margin-top: 90px;
+    }
+
+.anchor{
+font-size: 12px;
+font-family: alice;
+padding: 20px;
+text-decoration: none;
+color:#343333;
+
+}
+.anchor:hover{
+  color: #52ad07;
+}
+
+.howtocook{
+  height: 385px;
+  border: 1px solid #d2cfcf;
+  width: 270px;
+  float: left;
+  margin-left: 110px;
+  margin-top: 30px;
+  border-radius: 5px 5px 0px 0px;
+}
+.howtocook2{
+  height: 385px;
+  border: 1px solid #d2cfcf;
+  width: 270px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.howtocook3{
+  height: 385px;
+  border: 1px solid #d2cfcf;
+  width: 270px;
+  float: left;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.viewmore{
+      background-color:white;
+    border-radius: 25px;
+    border-color: #fd8348;
+    border: 1px solid;
+   font-size: 12px;
+    float: left;
+    margin-top: 395px;
+    margin-left: -210px;
+    height: 39px;
+    width: 155px;
+    text-align: center;
+    color: #fd8348;
+    padding-top: 12px;
+}
+.viewmore:hover{
+  color: #52ad07;
+  border-color: #52ad07;
+}
+.fillform{
+  background-color:white;
+border-radius: 25px;
+border:1px solid white;
+font-size: 12px;
+float: left;
+margin-top: 395px;
+margin-left: -210px;
+height: 39px;
+width: 165px;
+text-align: center;
+color: #fd8348;
+padding-top: 12px;
+}
+.fillform:hover{
+color:darkgreen;
+
+}
+.footer{
+  height: 950px;
+  width: 100%;
+}
+
+
+
+  
