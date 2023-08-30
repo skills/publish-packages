@@ -18,7 +18,7 @@ Here's a recap of all the tasks you've accomplished in your repository:
 ### What's next?
 
 - Publish your own packages from your projects.
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions).
+- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/publish-packages).
 - [Take another GitHub Skills course](https://github.com/skills).
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
