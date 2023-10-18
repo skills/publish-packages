@@ -42,7 +42,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
        runs-on: ubuntu-latest
        steps:
          - name: Checkout
-           uses: actions/checkout@v3
+           uses: actions/checkout@v4
          # Add your test steps here if needed...
          - name: Docker meta
            id: meta
