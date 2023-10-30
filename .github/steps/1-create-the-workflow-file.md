@@ -42,22 +42,22 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
        runs-on: ubuntu-latest
        steps:
          - name: Checkout
-           uses: actions/checkout@v3
+           uses: actions/checkout@v4
          # Add your test steps here if needed...
          - name: Docker meta
            id: meta
-           uses: docker/metadata-action@v4
+           uses: docker/metadata-action@v5
            with:
              images: ghcr.io/YOURNAME/publish-packages/game
              tags: type=sha
          - name: Login to GHCR
-           uses: docker/login-action@v2
+           uses: docker/login-action@v3
            with:
              registry: ghcr.io
              username: ${{ github.repository_owner }}
              password: ${{ secrets.GITHUB_TOKEN }}
          - name: Build container
-           uses: docker/build-push-action@v4
+           uses: docker/build-push-action@v5
            with:
              context: .
              push: true
