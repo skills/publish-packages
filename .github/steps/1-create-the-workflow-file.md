@@ -14,7 +14,7 @@ First, take a moment to examine the image below. It shows the relationship betwe
 
 ![](https://i.imgur.com/xZCkjmU.png)
 
-**Continuous integration** (CI) is a practice where developers integrate tested code into a shared branch several times per day. **Continuous delivery** (CD) is the next phase of **continuous integration** (CI), where we deploy our changes to the world.
+**Continuous integration** (CI) is a practice where developers integrate tested code into a shared branch several times per day. **Continuous delivery** (CD) is the next phase of **continuous integration** (CI) where we also make sure to package the code in a _release_ and store it somewhere - preferably, in a package manager. Lastly, **Continuous deployment** (CD) takes **continuous delivery** (CD) to the next level by directly deploying our releases to the world.
 
 [**Docker**](https://www.docker.com/why-docker) is an engine that allows you to run containers.
 Containers are packages of software that can run reliably in different environments. Containers include everything needed to run the application. Containers are lightweight in comparison to virtual machines. A **Dockerfile** is a text document that contains all the commands and instructions necessary to build a Docker Image. A **Docker image** is an executable package comprised of code, dependencies, libraries, a runtime, environment variables, and configuration files. A **Docker container** is a runtime instance of a Docker Image.
