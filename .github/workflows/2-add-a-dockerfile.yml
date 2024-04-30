@@ -61,7 +61,7 @@ jobs:
         uses: skills/action-check-file@v1
         with:
           file: "Dockerfile"
-          search: "FROM nginx:1.24-alpine"
+          search: "FROM nginx:1\\.24-alpine"
 
       # In README.md, switch step 2 for step 3.
       - name: Update to step 3
