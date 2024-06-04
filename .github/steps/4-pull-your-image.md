@@ -12,7 +12,7 @@ Whoa, now things are running! This may take a few minutes. This might take a tin
 
 To pull the Docker image, we need to log into Docker first.
 
-Before we can use this Docker image, you will need to generate a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that contains the following permissions:
+Before we can use this Docker image, you will need to generate a [Personal access tokens (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that contains the following permissions:
 
 - repo (all)
 - write:packages
