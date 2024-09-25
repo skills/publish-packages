@@ -55,7 +55,7 @@ jobs:
           fetch-depth: 0 # Let's get all the branches.
 
       # In README.md, switch step 3 for step 45X.
-      - name: Update to step 45X
+      - name: Update to step 456X
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
