@@ -4,7 +4,7 @@
   Define terms and link to docs.github.com.
 -->
 
-## Step 6: Clean up Docker containers and images
+## Step 6: Clean up Docker container and image
 
 Excellent! Now it's time to clean up your Docker environment! :broom:
 
