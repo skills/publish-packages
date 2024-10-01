@@ -10,7 +10,16 @@ _Now things are running! :sparkles:_
 
 Whoa, now things are running! This may take a few minutes. This might take a tiny amount of time, so grab your popcorn :popcorn: and wait for the build to finish before moving on.
 
-To pull the Docker image, we need to log into Docker first.
+While we wait for the build to finish, let's take care of a few prerequisites.
+
+For ease of use and cross-platform compatibility (Windows, Mac, and Linux), we'll focus on Docker Desktop. Not to be confused, Docker Engine is the foundation for running containers while **[Docker Desktop](https://www.docker.com/blog/how-to-check-docker-version/)** bundles Docker Engine, a GUI, and a Virtual Machine in a _single installation_.
+
+1. Install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/#install-docker-desktop-on-windows).
+   * If you're using Mac or Linux, locate the correct install steps at the previous link via the lefthand tree menu.
+1. Open Docker Desktop and [briefly explore](https://docs.docker.com/desktop/use-desktop/).
+1. For running `docker` commands, access the command-line terminal either via Bash, Git Bash, Windows Command Prompt or PowerShell.
+
+:inbox_tray: To pull the Docker image, we need to log into Docker first.
 
 Before we can use this Docker image, you will need to generate a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that contains the following permissions:
 
