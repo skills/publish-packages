@@ -10,7 +10,7 @@ _Now things are running! :sparkles:_
 
 Whoa, now things are running! This may take a few minutes. This might take a tiny amount of time, so grab your popcorn :popcorn: and wait for the build to finish before moving on.
 
-While we wait for the build to finish, let's take care of a few prerequisites.
+:cook: While we wait for the build to finish, let's take care of a few prerequisites.
 
 For ease of use and cross-platform compatibility (Windows, Mac, and Linux), we'll focus on Docker Desktop. Not to be confused, Docker Engine is the foundation for running containers while **[Docker Desktop](https://www.docker.com/blog/how-to-check-docker-version/)** bundles Docker Engine, a GUI, and a Virtual Machine in a _single installation_.
 
