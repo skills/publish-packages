@@ -35,12 +35,14 @@ If everything went well, :crossed_fingers: you should see `Login Succeeded` in y
 
 ### :keyboard: Activity: Pull your image
 
-1. Copy and paste the `pull` command from the package instructions into your terminal. It should look something like this:
-   - `docker pull ghcr.io/YOURNAME/publish-packages/game:TAG`
+1. Copy the `pull` command from the package instructions.
+   - :fire: _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Packages** heading link_
      ![screenshot of the pull command on the GitHub package page](https://user-images.githubusercontent.com/3250463/219254981-9ff949fa-4d01-46e3-9e3d-b8ce3710c2a9.png)
-   - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Packages** heading link_
+   - Or alternatively, in the following URL replace `YOURNAME`, `REPONAME`, and browse to `https://github.com/users/YOURNAME/packages?repo_name=REPONAME` and click on the package name
 1. Replace `YOURNAME` with your GitHub username.
 1. Replace `TAG` with the image tag.
+1. Paste the `pull` command into your terminal. It should look something like this:
+   - `docker pull ghcr.io/YOURNAME/publish-packages/game:TAG`
 1. Press **Enter**.
 1. You should see output indicating that the pull was successful, like `Status: Downloaded newer image for ghcr.io/YOURNAME/publish-packages/game:TAG`.
    ![screenshot of successful Docker image output](https://user-images.githubusercontent.com/3250463/219255178-3c943a6f-6c15-4f59-9002-228249b1c469.png)
