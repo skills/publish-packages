@@ -25,7 +25,7 @@ We'll start by creating the workflow file to publish a Docker image to GitHub Pa
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Navigate to the **Code** tab.
-1. From the **main** branch dropdown, click on the **cd** branch.
+1. From the **main** branch dropdown, click on the `cd` branch.
 1. Navigate to the `.github/workflows/` folder, then select **Add file** and click on **Create new file**.
 1. In the **Name your file...** field, enter `publish.yml`.
 1. Add the following to the `publish.yml` file:
