@@ -23,9 +23,11 @@ For ease of use and cross-platform compatibility (Windows, Mac, and Linux), we'l
 
 Before we can use this Docker image, you will need to generate a [personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-There are two token options :coin: and only ***one*** is needed for this exercise.
+> [!IMPORTANT]
+> Of the two token types, [fine-grained tokens](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/) are ***recommended*** over classic tokens since they offer enhanced security and flexibility.
+
 <details open>
-<summary><b>1. :salt: Fine-grained tokens (recommended :fire:)</b></summary>
+<summary><b>1. :salt: Fine-grained tokens</b></summary>
 
 1. In the Repository Access section choose **Only select repositories**
 1. In the Select repositories, search for and click on the current repo name
