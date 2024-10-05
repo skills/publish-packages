@@ -21,7 +21,23 @@ For ease of use and cross-platform compatibility (Windows, Mac, and Linux), we'l
 
 :inbox_tray: To pull the Docker image, we need to log into Docker first.
 
-Before we can use this Docker image, you will need to generate a [personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that contains the following permissions:
+Before we can use this Docker image, you will need to generate a [personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+
+> [!IMPORTANT]
+> Of the two token types, [fine-grained tokens](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/) are ***recommended*** over classic tokens since they offer enhanced security and flexibility.
+
+<details open>
+<summary><b>1. :salt: Fine-grained tokens</b></summary>
+
+1. In the Repository Access section choose **Only select repositories**
+1. In the Select repositories, search for and click on the current repo name
+1. In the Permissions section, expand Repository Permissions
+1. Change **Deployments** to Read-only
+1. Scroll down and click **Generate token**
+</details>
+
+<details>
+<summary>2. Personal Access Token (classic)</summary>
 
 **Scopes for Personal Access Token (classic)** :coin:
 - repo (all)
@@ -29,6 +45,7 @@ Before we can use this Docker image, you will need to generate a [personal acces
 - read:packages
 
 ![screenshot personal access token creation page with boxes for repo (all), write:packages, and read:packages checked](https://user-images.githubusercontent.com/3250463/219254714-82bb1da5-33b1-491b-97c0-b25f51494f6a.png)
+</details>
 
 We will use this token to log in to Docker, and authenticate with the package.
 
